@@ -266,7 +266,7 @@ const ProjectsCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "max-w-[42rem] w-full inline-flex flex-col items-start justify-start gap-8 p-6 rounded-xl bg-gray-900 text-white shadow",
+      "max-w-[42rem] w-full h-full max-h-[38rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-8 p-6 rounded-xl bg-gray-900 text-white shadow",
       className
     )}
     {...props}

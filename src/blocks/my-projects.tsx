@@ -14,7 +14,7 @@ type Project = {
 
 export default function Projects() {
     return (
-        <div id="projects" className="w-full inline-flex flex-row overflow-x-scroll snap-x snap-center md:flex-col items-start justify-center gap-3">
+        <div id="projects" className="w-full inline-flex flex-row overflow-x-scroll snap-x snap-center md:flex-col items-start justify-start gap-3">
             {projectsData.projects.map((project: Project) => {
                 return (
                     <ProjectsCard key={project.id} className="">
@@ -31,7 +31,7 @@ export default function Projects() {
                                 <ProjectsCardSkills>
                                     {project.tools.map((tool: string) => {
                                         return (
-                                            <div key={tool} className='inline-flex items-center rounded-[0.5rem] border border-indigo-800 text-[0.9rem] bg-gray-500 min-w-10 h-8 px-3 py-2'>
+                                            <div key={tool} className='inline-flex items-center rounded-[0.35rem] md:rounded-[0.5rem] border border-indigo-800 text-[0.8rem] md:text-[0.9rem] bg-gray-500 min-w-10 h-6 md:h-8 px-3 py-2'>
                                                 {tool}</div>
                                             )
                                     })}
