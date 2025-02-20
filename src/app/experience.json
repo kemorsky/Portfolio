@@ -1,0 +1,38 @@
+{
+    "experience": {
+      "education": {
+        "key1": {
+          "profession": "Front End Student",
+          "name": "JENSEN Yrkes Högskola, Gothenburg",
+          "date": "08.2023 - 06.2025",
+          "description": "Studied Front End Development at JENSEN YrkesHögskola in Gothenburg, Sweden. Learned the understanding and basics of core Front End languages such as HTML, CSS, JavaScript, but also tools and frameworks such as React, Node, Vitest, Tailwind, Next.Js and Firebase."
+        },
+        "key2": {
+          "profession": "Tiler",
+          "name": "Movant, Borås",
+          "date": "01.2021-  04.2022",
+          "description": "Underwent studies in construction with specification in tiling. Education focused on preparing me for the job market with clients and teams alike."
+        }
+      },
+      "work": {
+        "key1": {
+          "profession": "Front End Developer - Intern",
+          "name": "K Hermodsson Development AB, Lund, Skåne (Remote)",
+          "date": "23.11.2024 - 02.05.2025",
+          "description": "Lärande i arbetet, or internship performed at the consult company operating from Småland. During my time with the company I learned Next.Js and used it to rebuild a landing page for a company from Stockholm. I also used it to write this page!"
+        },
+        "key2": {
+          "profession": "Tiler",
+          "name": "KrissAn Plattsättning",
+          "date": "05 - 06.2023",
+          "description": "Worked as a tiler for a small company operating from Bollebygd. Performed various services to different clients within the profession."
+        },
+        "key3": {
+          "profession": "Tiler",
+          "name": "SBOR Bygg och Renovering, Gothenburg",
+          "date": "05 - 10.2022",
+          "description": "Worked as a tiler for a small company operating from Gothenburg. Performed various services to different clients within the profession."
+        }
+      }
+    }
+  }

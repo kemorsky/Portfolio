@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "image": "/images/projects/project-1.png",
+            "name": "Kollin Landing Page - Personal Vision",
+            "description": "Renovated landing page of Kollin - a company specializing in providing courses to students, based on a vague wireframe from the company. I took the artistic liberty to create something that respected the vision of the company whilst trying out something that was mine. The website was renovated using Next.Js and Tailwind as well as ShadCN components and Rombo.",
+            "tools": ["TypeScript", "Next.Js", "Tailwind", "ShadCN", "Rombo"]
+        },
+        {
+            "id": 2,
+            "image": "/images/projects/project-2.png",
+            "name": "Kollin Landing Page",
+            "description": "Renovated landing page of Kollin - a company specializing in providing courses to students, as part of my internship together with a team of three other students. The website was renovated using Next.Js and Tailwind as well as ShadCN components.",
+            "tools": ["TypeScript", "Next.Js", "Tailwind", "ShadCN"]
+        },
+        {
+            "id": 3,
+            "image": "/images/projects/project-3.png",
+            "name": "Musically Webshop",
+            "description": "Examination part of my UI/UX course taken as part of my education. Webshop on which one can purchase and sell used musical instruments. Built using React and Tailwind.",
+            "tools": ["TypeScript", "React", "Tailwind"]
+        }
+    ]
+}

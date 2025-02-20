@@ -1,0 +1,42 @@
+"use client"
+
+import Link from "next/link";
+
+export default function Navbar() {
+
+    const scrollToSection = function (element_id: string) {
+        const element = document.getElementById(element_id);
+        element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
+
+    return (
+        <nav className="w-full max-w-[90rem] z-50 h-[6.25rem] px-10 bg-background/80 backdrop-blur-md rounded-2xl fixed top-0 left-[15rem] overflow-hidden">
+            <div className="w-full h-full inline-flex items-center justify-center text-white">
+                <div className="max-w-[50rem] inline-flex items-center justify-between gap-[3.5rem]">
+                    <div className="inline-flex items-center gap-6">
+                        <span onClick={() => scrollToSection('home')} className="hover:text-gray-500 hover:transition-colors group relative cursor-pointer">Home
+                            <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
+                            group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
+                        </span>
+                        <Link className="hover:text-gray-500 hover:transition-colors group relative" href="#">About
+                            <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
+                            group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
+                        </Link>
+                        <span onClick={() => scrollToSection('projects')} className="hover:text-gray-500 hover:transition-colors group relative cursor-pointer">Projects
+                            <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
+                            group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
+                        </span>
+                        <Link className="hover:text-gray-500 hover:transition-colors group relative" href="#">Blog
+                            <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
+                            group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
+                        </Link>
+                        <span onClick={() => scrollToSection('contact-me')} className="hover:text-gray-500 hover:transition-colors group relative cursor-pointer">Contact
+                            <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
+                            group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
+                        </span >
+                    </div>
+                </div>
+            </div>
+        </nav>
+    )    
+};
