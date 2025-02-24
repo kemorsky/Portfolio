@@ -8,9 +8,9 @@ type Skill = {
   export default function Skills() {
     return (
         <div className="inline-flex flex-col items-start justify-center gap-6 text-white">
-            <h1 className='text-3xl font-bold'>Skills</h1>
+            <h1 className='text-3xl font-semibold'>Skills</h1>
             <div className="flex flex-col gap-3">
-                <h2 className='text-[1.125rem] font-semibold'>Languages</h2>
+                <h2 className='text-[1.125rem] font-medium'>Languages</h2>
                 <div className='inline-flex items-center gap-2'>
                     {skillsData.skills.languages.map((language: Skill) => {
                         return (
@@ -20,7 +20,7 @@ type Skill = {
                 </div>
             </div>
             <div className="flex flex-col gap-3">
-                <h2 className='text-[1.125rem] font-semibold'>Frameworks</h2>
+                <h2 className='text-[1.125rem] font-medium'>Frameworks</h2>
                 <div className='inline-flex items-center gap-2'>
                     {skillsData.skills.frameworks.map((framework: Skill) => {
                         return (
@@ -30,7 +30,7 @@ type Skill = {
                 </div>
             </div>
             <div className="flex flex-col gap-3">
-                <h2 className='text-[1.125rem] font-semibold'>Tools</h2>
+                <h2 className='text-[1.125rem] font-medium'>Tools</h2>
                 <div className='inline-flex items-center gap-2'>
                     {skillsData.skills.tools.map((tool: Skill) => {
                         return (
@@ -40,7 +40,7 @@ type Skill = {
                 </div>
             </div>
             <div className="flex flex-col gap-3">
-                <h2 className='text-[1.125rem] font-semibold'>Backend</h2>
+                <h2 className='text-[1.125rem] font-medium'>Backend</h2>
                 <div className='inline-flex items-center gap-2'>
                     {skillsData.skills.backends.map((backend: Skill) => {
                         return (
@@ -50,7 +50,7 @@ type Skill = {
                 </div>
             </div>
             <div className="flex flex-col gap-3">
-                <h2 className='text-[1.125rem] font-semibold'>General</h2>
+                <h2 className='text-[1.125rem] font-medium'>General</h2>
                 <div className='inline-flex items-center gap-2'>
                     {skillsData.skills.generals.map((general: Skill) => {
                         return (

@@ -30,7 +30,7 @@ export default function Experience() {
     return (
         <div className="w-full inline-flex flex-col items-start justify-center gap-[2.5rem] text-white">
             <div className="inline-flex flex-col items-start justify-center gap-6">
-                <h2 className="text-3xl font-bold">Education</h2>
+                <h2 className="text-3xl font-semibold">Education</h2>
                 {Object.keys(data.experience.education).map((key) => (
                     <ExperienceCard key={key}>
                         <ExperienceCardContent>
@@ -43,7 +43,7 @@ export default function Experience() {
                 ))}
             </div>
             <div className="inline-flex flex-col items-start justify-center gap-6">
-                <h2 className="text-3xl font-bold">Work</h2>
+                <h2 className="text-3xl font-semibold">Work</h2>
                 {Object.keys(data.experience.work).map((key) => (
                     <ExperienceCard key={key}>
                         <ExperienceCardContent>

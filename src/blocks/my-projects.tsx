@@ -15,7 +15,7 @@ type Project = {
 export default function Projects() {
     return (
         <div className="w-full inline-flex items-start justify-center flex-col gap-6">
-            <h2 className="text-3xl font-bold text-white">My Projects</h2>
+            <h2 className="text-3xl font-semibold text-white">My Projects</h2>
             <div id="projects" className="w-full inline-flex flex-row overflow-x-scroll snap-x snap-center md:flex-col md:snap-none items-start justify-start gap-6">
                 {projectsData.projects.map((project: Project) => {
                     return (
