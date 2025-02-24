@@ -61,13 +61,14 @@ export default function Contact() {
 
 
   return (
-    <div className="w-full inline-flex flex-col items-start justify-center gap-3">
-      <h1 className="text-3xl text-white">Want to contact me?</h1>
-      <h2 className="text-2xl text-gray-100">Send me an email!</h2>
-
+    <div className="w-full max-w-[35rem] bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl mx-auto lg:m-0">
+      <div className="flex flex-col items-start justify-center gap-2">
+        <h1 className="text-[1.5rem] font-bold text-white">Get in touch with me!</h1>
+        <h2 className="text-[0.875rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>
+      </div>
       <Form {...form}>
-      <form action={formAction} id="contact-me" className="w-full max-w-[35rem] space-y-4 bg-blue-200 px-4 py-3 rounded-xl mx-auto lg:m-0">
-        <div className="w-full inline-flex flex-col sm:flex-row items-start md:items-center justify-center gap-4">
+      <form action={formAction} id="contact-me" className="w-full">
+        
             <FormField
                 control={form.control}
                 name="firstName"
@@ -94,7 +95,7 @@ export default function Contact() {
                     </FormItem>
                 )}
             />
-        </div>
+      
         
         <FormField
             control={form.control}
@@ -103,16 +104,17 @@ export default function Contact() {
                 <FormItem>
                     <FormLabel>Message</FormLabel>
                     <FormControl>
-                        <Textarea className="min-h-[8rem]" {...field} />
+                        <Textarea className="min-h-[5rem]" placeholder="Your message here..." {...field} />
                     </FormControl>
                     <FormMessage />
                 </FormItem>
             )}
         />
-        <Button type="submit">Submit</Button>
-          {state?.success && <p className="text-green-500">✅ Email sent successfully!</p>}
-          {state?.error && <p className="text-red-500">🚨 {state.error}</p>}
+        
       </form>
+      <Button type="submit" variant="submit" size="submit" className="self-end">Submit</Button>
+      {state?.success && <p className="text-green-500">✅ Email sent successfully!</p>}
+      {state?.error && <p className="text-red-500">🚨 {state.error}</p>}
     </Form>
     </div>
     

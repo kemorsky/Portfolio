@@ -12,8 +12,10 @@ export default {
   	extend: {
   		colors: {
 			Customs: {
-				Primary: "#2F0601",
-				Secondary: "hsl(10 0% 20%)",
+				Primary: "hsl(357, 92%, 10%)",
+				Card: "hsl(222, 76%, 13%)",
+				aboutButtons: "hsl(222, 76%, 70%)",
+				projectTools: "hsl(222, 76%, 40%)",
 			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

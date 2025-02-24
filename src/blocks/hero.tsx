@@ -2,7 +2,7 @@ import { HeroCard, HeroCardTitle, HeroCardDescription} from "@/components/ui/car
 
 export default function Hero() {
     return (
-        <div id="home" className="w-full inline-flex flex-col items-center justify-center">
+        <div id="home" className="w-full">
             <HeroCard>
                 <HeroCardTitle>Hey, I'm Kamil.</HeroCardTitle>
                 <HeroCardDescription>

@@ -28,29 +28,33 @@ export default function Experience() {
     const data: ExperienceData = experienceData;
 
     return (
-        <div className="w-full inline-flex flex-col items-start justify-center gap-4 text-white px-6">
-            <h2 className="text-3xl">Education</h2>
-            {Object.keys(data.experience.education).map((key) => (
-                <ExperienceCard key={key}>
-                    <ExperienceCardContent>
-                        <ExperienceCardTitle>{data.experience.education[key].profession}</ExperienceCardTitle>
-                        <ExperienceCardSubTitle>{data.experience.education[key].name}</ExperienceCardSubTitle>
-                        <ExperienceCardDescription>{data.experience.education[key].date}</ExperienceCardDescription>
-                        <ExperienceCardDescription>{data.experience.education[key].description}</ExperienceCardDescription>
-                    </ExperienceCardContent>
-                </ExperienceCard>
-            ))}
-            <h2 className="text-3xl">Work</h2>
-            {Object.keys(data.experience.work).map((key) => (
-                <ExperienceCard key={key}>
-                    <ExperienceCardContent>
-                        <ExperienceCardTitle>{data.experience.work[key].profession}</ExperienceCardTitle>
-                        <ExperienceCardSubTitle>{data.experience.work[key].name}</ExperienceCardSubTitle>
-                        <ExperienceCardDescription>{data.experience.work[key].date}</ExperienceCardDescription>
-                        <ExperienceCardDescription>{data.experience.work[key].description}</ExperienceCardDescription>
-                    </ExperienceCardContent>
-                </ExperienceCard>
-            ))}
+        <div className="w-full inline-flex flex-col items-start justify-center gap-[2.5rem] text-white">
+            <div className="inline-flex flex-col items-start justify-center gap-6">
+                <h2 className="text-3xl font-bold">Education</h2>
+                {Object.keys(data.experience.education).map((key) => (
+                    <ExperienceCard key={key}>
+                        <ExperienceCardContent>
+                            <ExperienceCardTitle>{data.experience.education[key].profession}</ExperienceCardTitle>
+                            <ExperienceCardSubTitle>{data.experience.education[key].name}</ExperienceCardSubTitle>
+                            <ExperienceCardDescription>{data.experience.education[key].date}</ExperienceCardDescription>
+                            <ExperienceCardDescription>{data.experience.education[key].description}</ExperienceCardDescription>
+                        </ExperienceCardContent>
+                    </ExperienceCard>
+                ))}
+            </div>
+            <div className="inline-flex flex-col items-start justify-center gap-6">
+                <h2 className="text-3xl font-bold">Work</h2>
+                {Object.keys(data.experience.work).map((key) => (
+                    <ExperienceCard key={key}>
+                        <ExperienceCardContent>
+                            <ExperienceCardTitle>{data.experience.work[key].profession}</ExperienceCardTitle>
+                            <ExperienceCardSubTitle>{data.experience.work[key].name}</ExperienceCardSubTitle>
+                            <ExperienceCardDescription>{data.experience.work[key].date}</ExperienceCardDescription>
+                            <ExperienceCardDescription>{data.experience.work[key].description}</ExperienceCardDescription>
+                        </ExperienceCardContent>
+                    </ExperienceCard>
+                ))}
+            </div>
         </div>
     )    
 };
