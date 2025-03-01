@@ -7,23 +7,22 @@ import Skills from "@/blocks/skills";
 import Experience from "@/blocks/experience";
 import Projects from "@/blocks/my-projects";
 import Contact from "@/blocks/contact-me";
+import Footer from "@/blocks/footer";
 
 export default function Home() {
   return (
     <ObserverProvider>
-      <div className="mx-auto flex items-center justify-center max-w-[90rem] bg-Customs-Primary z-40">
+      <div className="mx-auto flex items-center justify-center w-screen bg-Customs-Primary z-40 scroll-smooth relative">
         <Navbar/>
-        <main className="w-full flex flex-col lg:flex-row items-center lg:items-start px-4 md:px-0 gap-8 justify-center relative top-[7rem] bg-Customs-Primary">
-          <div className="max-w-[35rem] lg:sticky top-[7rem] flex items-center">
-            {/* <div className="w-[31.875rem] h-[31.875rem] left-[-17.5rem] top-[-2.438rem] absolute bg-neutral-600/20 rounded-full blur-[25rem] z-10"/> */}
-            <About/>
-          </div>
-          <div className="max-w-[55rem] w-full flex flex-col items-start justify-center gap-[3.75rem] relative">
+        <main className="w-full flex flex-col lg:flex-row items-center lg:items-start px-4 lg:px-0 gap-8 justify-center relative top-[7rem] bg-Customs-Primary">
+          <div className="max-w-[55rem] w-full flex flex-col items-start justify-center gap-8 sm:gap-12 md:gap-16 relative">
+          <About/>
             <Hero/>
-            <Skills/>
             <Experience/>
+            <Skills/>
             <Projects/>
             <Contact/>
+            <Footer />
           </div>
         </main> 
       </div>

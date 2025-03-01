@@ -31,7 +31,6 @@ export default function Contact() {
 
       const [state, formAction] = useActionState(
         async (prevState: { success?: boolean; error?: string } | null, formData: FormData) => {
-          // ✅ Ensure FormData values match the Zod schema
           const values = {
             firstName: formData.get("firstName")?.toString().trim() || "",
             email: formData.get("email")?.toString().trim() || "",
@@ -40,7 +39,6 @@ export default function Contact() {
       
           console.log("📨 Form submitted:", values);
       
-          // ✅ Validate with Zod before sending
           const validation = formSchema.safeParse(values);
           if (!validation.success) {
             console.error("🚨 Validation failed:", validation.error.format());
@@ -57,11 +55,9 @@ export default function Contact() {
         },
         null
       );
-      
-
 
   return (
-    <div className="w-full max-w-[35rem] bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl mx-auto lg:m-0">
+    <div className="w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl mx-auto lg:m-0">
       <div className="flex flex-col items-start justify-center gap-2">
         <h1 className="text-[1.5rem] font-semibold text-white">Get in touch with me!</h1>
         <h2 className="text-[0.875rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>

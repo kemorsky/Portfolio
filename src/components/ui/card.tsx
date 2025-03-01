@@ -9,7 +9,7 @@ const AboutCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full inline-flex flex-col items-start justify-start gap-4 px-4 py-2 rounded-xl bg-Customs-Card text-white shadow",
+      "w-[22rem] inline-flex flex-col items-start justify-center gap-2 px-4 py-2 rounded-xl bg-Customs-Card text-white shadow",
       className
     )}
     {...props}
@@ -30,34 +30,34 @@ const AboutCardHeader = React.forwardRef<
 AboutCardHeader.displayName = "AboutCardHeader"
 
 const AboutCardTitle = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <span
     ref={ref}
-    className={cn("font-[Open_Sans] font-semibold text-[1.35rem] leading-[1.5rem] text-white", className)}
+    className={cn("font-[Open_Sans] font-semibold text-[1.4rem] leading-[1.5rem] text-white", className)}
     {...props}
   />
 ))
 AboutCardTitle.displayName = "AboutCardTitle"
 
 const AboutCardSubTitle = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <span
     ref={ref}
-    className={cn("font-[Open_Sans] text-[0.875rem] leading-[1rem] text-white/90", className)}
+    className={cn("font-[Open_Sans] text-[1rem] leading-[1rem] text-white/90", className)}
     {...props}
   />
 ))
 AboutCardSubTitle.displayName = "AboutCardSubTitle"
 
 const AboutCardDescription = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <span
     ref={ref}
     className={cn("text-[0.875rem] leading-[1.25rem] text-white/75", className)}
     {...props}
@@ -72,7 +72,7 @@ const AboutCardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("inline-flex items-center justify-center", className)}
+    className={cn("inline-flex items-center justify-center gap-3", className)}
     {...props}
   />
 ))
@@ -156,7 +156,7 @@ const ExperienceCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "shadow inline-flex items-center justify-center px-4 border-l-[3px] rounded-[2px] border-gray-600",
+      "inline-flex items-start justify-center px-4 py-3 gap-3 relative",
       className
     )}
     {...props}
@@ -168,9 +168,21 @@ const ExperienceCardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("inline-flex flex-col items-start gap-2", className)} {...props} />
+  <div ref={ref} className={cn("pl-[1rem] inline-flex flex-col items-start gap-1 border-l-[2px] border-gray-500 ml-16", className)} {...props} />
 ))
 ExperienceCardContent.displayName = "ExperienceCardContent"
+
+const ExperienceCardImage = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("w-[3.5rem] h-[3.5rem] rounded-full bg-cover no-repeat shadow-md absolute left-[1rem] top-[1rem]", className)}
+    {...props}
+  />
+))
+ExperienceCardImage.displayName = "ExperienceCardImage"
 
 const ExperienceCardHeader = React.forwardRef<
   HTMLDivElement,
@@ -184,13 +196,25 @@ const ExperienceCardHeader = React.forwardRef<
 ))
 ExperienceCardHeader.displayName = "ExperienceCardHeader"
 
+const ExperienceCardTime = React.forwardRef<
+  HTMLTimeElement,
+  React.HTMLAttributes<HTMLTimeElement>
+>(({ className, ...props }, ref) => (
+  <time
+    ref={ref}
+    className={cn("text-sm font-semibold text-white/70", className)}
+    {...props}
+  />
+))
+ExperienceCardTime.displayName = "ExperienceCardTime"
+
 const ExperienceCardTitle = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[1.15rem] md:text-[1.25rem] font-bold", className)}
+    className={cn("text-[1rem] md:text-[1.25rem] font-bold", className)}
     {...props}
   />
 ))
@@ -202,7 +226,7 @@ const ExperienceCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[0.875rem] font-semibold text-white/90", className)}
+    className={cn("text-sm font-semibold text-white/70", className)}
     {...props}
   />
 ))
@@ -214,7 +238,7 @@ const ExperienceCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[0.875rem] text-white/70", className)}
+    className={cn("max-w-[35rem] text-sm font-medium text-white/90", className)}
     {...props}
   />
 ))
@@ -227,7 +251,7 @@ const HeroCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full inline-flex flex-col items-start justify-start gap-6 p-6 rounded-xl bg-Customs-Card text-white shadow",
+      "w-full inline-flex flex-col text-left gap-4 p-6 rounded-xl bg-Customs-Card shadow",
       className
     )}
     {...props}
@@ -241,7 +265,7 @@ const HeroCardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("font-[Open_Sans] text-[1.25rem]", className)}
+    className={cn("font-[Open_Sans] text-[1.125rem] leading-[1.5rem] text-white", className)}
     {...props}
   />
 ))
@@ -253,7 +277,7 @@ const HeroCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[1rem] leading-[1.3rem] text-white/80", className)}
+    className={cn("text-[1rem] leading-[1.5rem] text-white/85", className)}
     {...props}
   />
 ))
@@ -266,7 +290,7 @@ const ProjectsCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full h-full min-h-[30rem] max-h-[38rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-8 p-6 rounded-xl bg-Customs-Card shadow",
+      "w-full max-w-[27.125rem] h-[28rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer hover:translate-y-[-0.5rem] transition-all duration-200",
       className
     )}
     {...props}
@@ -288,7 +312,7 @@ const ProjectsCardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full h-full bg-cover no-repeat inline-flex items-center justify-center rounded-xl shadow-md overflow-hidden", className)}
+    className={cn("h-[14rem] bg-cover no-repeat rounded-xl shadow-md overflow-hidden", className)}
     {...props}
   />
 ))
@@ -300,7 +324,7 @@ const ProjectsCardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full font-semibold text-[1.125rem] md:text-[1.5rem] text-white", className)}
+    className={cn("w-full flex justify-between font-semibold text-[1.25rem] text-white", className)}
     {...props}
   />
 ))
@@ -312,7 +336,7 @@ const ProjectsCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full text-[0.875rem] text-white/80", className)}
+    className={cn("w-full text-sm text-white/80", className)}
     {...props}
   />
 ))
@@ -343,5 +367,5 @@ const ProjectsCardSkills = React.forwardRef<
 ProjectsCardSkills.displayName = "ProjectsCardSkills"
 
 export { AboutCard, AboutCardHeader, AboutCardTitle, AboutCardSubTitle, AboutCardDescription, AboutCardFooter, Card, CardContent, CardHeader,  CardFooter, CardTitle, CardDescription, ExperienceCard, 
-  ExperienceCardHeader, ExperienceCardContent, ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardDescription, HeroCard, HeroCardTitle, HeroCardDescription,
+  ExperienceCardHeader, ExperienceCardContent, ExperienceCardImage, ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardTime, ExperienceCardDescription, HeroCard, HeroCardTitle, HeroCardDescription,
   ProjectsCard, ProjectsCardContent, ProjectsCardHeader, ProjectsCardTitle, ProjectsCardSubTitle, ProjectsCardDescription, ProjectsCardSkills }
