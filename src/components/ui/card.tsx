@@ -47,7 +47,7 @@ const AboutCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <span
     ref={ref}
-    className={cn("font-[Open_Sans] text-[1rem] leading-[1rem] text-white/90", className)}
+    className={cn("w-[21rem] flex items-center justify-start gap-2 font-[Open_Sans] text-[1rem] leading-[1rem] text-white/90", className)}
     {...props}
   />
 ))
@@ -72,7 +72,7 @@ const AboutCardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("inline-flex items-center justify-center gap-3", className)}
+    className={cn("w-full inline-flex items-center justify-center gap-3", className)}
     {...props}
   />
 ))
@@ -251,7 +251,7 @@ const HeroCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full inline-flex flex-col text-left gap-4 p-6 rounded-xl bg-Customs-Card shadow",
+      "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl bg-Customs-Card shadow",
       className
     )}
     {...props}
@@ -277,7 +277,7 @@ const HeroCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[1rem] leading-[1.5rem] text-white/85", className)}
+    className={cn("text-[1rem] leading-[1.35rem] text-white/85", className)}
     {...props}
   />
 ))
@@ -290,7 +290,7 @@ const ProjectsCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full max-w-[27.125rem] h-[28rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer hover:translate-y-[-0.5rem] transition-all duration-200",
+      "w-full max-w-[27.125rem] sm:max-h-[26rem] h-[29rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer hover:translate-y-[-0.5rem] transition-all duration-200",
       className
     )}
     {...props}
@@ -302,7 +302,7 @@ const ProjectsCardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("w-full inline-flex flex-col items-start justify-center gap-4", className)} {...props} />
+  <div ref={ref} className={cn("w-full inline-flex flex-col items-center justify-center gap-4", className)} {...props} />
 ))
 ProjectsCardContent.displayName = "ProjectsCardContent"
 
@@ -348,7 +348,7 @@ const ProjectsCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full inline-flex flex-col items-start justify-center gap-4", className)}
+    className={cn("w-full inline-flex flex-col items-start justify-center gap-3", className)}
     {...props}
   />
 ))

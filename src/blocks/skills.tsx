@@ -8,9 +8,9 @@ type Skill = {
   export default function Skills() {
     return (
         <div className="w-full inline-flex flex-col items-start gap-6 text-white">
-            <h1 className='text-3xl font-semibold'>Skills</h1>
+            <h1 className='text-3xl font-bold'>Skills</h1>
             <div className="w-full inline-flex flex-col items-start md:grid md:grid-cols-2 gap-4 text-white">
-                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-100%]">
+                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-25%]">
                     <h2 className='text-[1.125rem] font-medium'>Languages</h2>
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.languages.map((language: Skill) => {
@@ -20,7 +20,7 @@ type Skill = {
                         })}
                     </div>
                 </div>
-                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-100%]">
+                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[25%]">
                     <h2 className='text-[1.125rem] font-medium'>Frameworks</h2>
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.frameworks.map((framework: Skill) => {
@@ -30,7 +30,7 @@ type Skill = {
                         })}
                     </div>
                 </div>
-                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[100%]">
+                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-25%]">
                     <h2 className='text-[1.125rem] font-medium'>Backend</h2>
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.backends.map((backend: Skill) => {
@@ -40,7 +40,7 @@ type Skill = {
                         })}
                     </div>
                 </div>
-                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[100%]">
+                <div className="flex flex-col gap-3 intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[25%]">
                     <h2 className='text-[1.125rem] font-medium'>Tools</h2>
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.tools.map((tool: Skill) => {
