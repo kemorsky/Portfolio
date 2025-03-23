@@ -33,7 +33,6 @@ type Experience = {
 
 export default function Experience() {
     const data: ExperienceData = experienceData;
-
     const [activeTab, setActiveTab] = useState(() => {
         return localStorage.getItem("activeTab") || "education";
     });
