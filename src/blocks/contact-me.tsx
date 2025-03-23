@@ -64,7 +64,6 @@ export default function Contact() {
       </div>
       <Form {...form}>
       <form action={formAction} id="contact-me" className="w-full">
-        
             <FormField
                 control={form.control}
                 name="firstName"
@@ -76,7 +75,7 @@ export default function Contact() {
                         </FormControl>
                         <FormMessage />
                     </FormItem>
-            )}
+                )}
             />
             <FormField
                 control={form.control}
@@ -91,8 +90,7 @@ export default function Contact() {
                     </FormItem>
                 )}
             />
-      
-        
+    
         <FormField
             control={form.control}
             name="message"

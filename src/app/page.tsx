@@ -7,7 +7,6 @@ import Skills from "@/blocks/skills";
 import Experience from "@/blocks/experience";
 import Projects from "@/blocks/my-projects";
 import Contact from "@/blocks/contact-me";
-import Footer from "@/blocks/footer";
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
             <Skills/>
             <Projects/>
             <Contact/>
-            <Footer />
           </div>
         </main> 
       </div>
