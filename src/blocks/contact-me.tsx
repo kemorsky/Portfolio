@@ -38,8 +38,8 @@ export default function Contact() {
           await send(validation.data);
           alert("✅ Email sent successfully!"); // Inform the user upon success
         } catch (error) {
-            // console.error("🚨 Error sending email:", error);
-            alert("🚨 Failed to send email");
+            console.error("🚨 Error sending email:", error);
+            alert("🚨 Failed to send email",);
         }
       };
 
