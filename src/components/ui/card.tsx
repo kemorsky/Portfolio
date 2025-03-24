@@ -336,7 +336,7 @@ const ProjectsCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full text-sm text-white/80", className)}
+    className={cn("w-full text-[1rem] text-white/80", className)}
     {...props}
   />
 ))

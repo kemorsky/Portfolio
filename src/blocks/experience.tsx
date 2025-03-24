@@ -33,13 +33,14 @@ type Experience = {
 
 export default function Experience() {
     const data: ExperienceData = experienceData;
-    const [activeTab, setActiveTab] = useState(() => {
-        return localStorage.getItem("activeTab") || "education";
-    });
+    const [activeTab, setActiveTab] = useState("education");
 
     useEffect(() => {
-        localStorage.setItem("activeTab", activeTab);
-    }, [activeTab]);
+        const storedActiveTab = localStorage.getItem("activeTab");
+        if (storedActiveTab) {
+            setActiveTab(storedActiveTab);
+          }
+    }, []);
 
     return (
         <div className="w-full inline-flex flex-col items-center justify-center self-center gap-[2.5rem] text-white intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-25%]">

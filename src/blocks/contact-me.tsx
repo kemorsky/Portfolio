@@ -44,10 +44,10 @@ export default function Contact() {
       };
 
   return (
-    <div className="w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl mx-auto lg:m-0">
+    <div className="max-w-[40rem] bg-Customs-Card inline-flex flex-col items-start justify-center self-center gap-6 px-4 py-3 rounded-xl lg:m-0">
       <div className="flex flex-col items-start justify-center gap-2">
         <h1 className="text-[1.5rem] font-bold text-white">Get in touch with me!</h1>
-        <h2 className="text-[0.875rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>
+        <h2 className="text-[1rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>
       </div>
       <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
         <Form {...form}>
