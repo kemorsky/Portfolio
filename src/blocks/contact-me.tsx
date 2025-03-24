@@ -40,18 +40,19 @@ export default function Contact() {
         } catch (error) {
             console.error("🚨 Error sending email:", error);
             alert("🚨 Failed to send email",);
-        }
+        };
       };
 
   return (
-    <div className="max-w-[40rem] bg-Customs-Card inline-flex flex-col items-start justify-center self-center gap-6 px-4 py-3 rounded-xl lg:m-0">
+    <div className="z-50 w-full bg-Customs-Card inline-flex flex-col items-start justify-center self-center gap-6 px-4 py-3 rounded-xl lg:m-0 relative">
       <div className="flex flex-col items-start justify-center gap-2">
         <h1 className="text-[1.5rem] font-bold text-white">Get in touch with me!</h1>
         <h2 className="text-[1rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>
       </div>
-      <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
+      <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full h-full inline-flex flex-col">
         <Form {...form}>
-          <FormField
+          <section className="inline-flex items-center justify-center gap-3">
+            <FormField
               control={form.control}
               name="firstName"
               render={({ field }) => (
@@ -63,7 +64,7 @@ export default function Contact() {
                       <FormMessage />
                   </FormItem>
               )}/>
-          <FormField
+            <FormField
               control={form.control}
               name="email"
               render={({ field }) => (
@@ -75,6 +76,7 @@ export default function Contact() {
                       <FormMessage />
                   </FormItem>
               )}/>
+          </section>
           <FormField
               control={form.control}
               name="message"
@@ -82,13 +84,13 @@ export default function Contact() {
                   <FormItem>
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                          <Textarea className="min-h-[5rem]" placeholder="Your message here..." {...field} />
+                          <Textarea placeholder="Your message here..." {...field} />
                       </FormControl>
                       <FormMessage />
                   </FormItem>
               )}/>
         </Form>
-        <Button type="submit" variant="submit" size="submit" className="self-end mt-4">Submit</Button>
+        <Button type="submit" variant="submit" size="submit" className="self-end mt-20">Submit</Button>
       </form>
     </div>
     
