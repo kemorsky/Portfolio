@@ -10,9 +10,14 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			inter: ['Inter', 'sans-serif'],
+		},
   		colors: {
 			Customs: {
 				Primary: "hsl(0, 0%, 5%)",
+				// Primary: "hsl(224, 26%, 17%)",
+				backgroundEclipse: "hsl(353, 51%, 46%)",
 				Card: "hsl(0, 0%, 10%)",
 				aboutButtons: "hsl(51, 100%, 50%)",
 				projectTools: "hsl(32, 95%, 44%)",

@@ -11,7 +11,7 @@
             "id": 2,
             "image": "/images/projects/project-1.png",
             "name": "Kollin Landing Page",
-            "description": "Renovated landing page of Kollin as part of my internship together with a team of three other students.",
+            "description": "Renovated landing page of Kollin as part of my internship.",
             "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN"]
         },
         {

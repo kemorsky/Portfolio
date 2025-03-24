@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/700.css';
+
 body {
   background-color: "Customs-Primary";
 }

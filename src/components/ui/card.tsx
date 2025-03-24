@@ -47,7 +47,7 @@ const AboutCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <span
     ref={ref}
-    className={cn("w-[21rem] flex items-center justify-start gap-2 font-[Open_Sans] text-[1rem] leading-[1rem] text-white/90", className)}
+    className={cn("w-[21rem] flex items-center justify-start gap-2 font-[Open_Sans] text-[1rem] leading-[1.25rem] text-white/90", className)}
     {...props}
   />
 ))
@@ -72,7 +72,7 @@ const AboutCardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full inline-flex items-center justify-start gap-3", className)}
+    className={cn("w-full inline-flex items-center justify-start gap-4", className)}
     {...props}
   />
 ))
@@ -290,7 +290,7 @@ const ProjectsCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full max-w-[27.125rem] sm:max-h-[26rem] h-[29rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer hover:translate-y-[-0.5rem] transition-all duration-200",
+      "w-full max-w-[27.125rem] max-h-[26rem] sm:h-[28rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer hover:translate-y-[-0.5rem] transition-all duration-200",
       className
     )}
     {...props}
