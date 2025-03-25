@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <div className="w-full intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[25%]">
             <HeroCard>
-                <HeroCardTitle>Hey, I'm Kamil.</HeroCardTitle>
+                <HeroCardTitle>Hey, I&apos;m Kamil.</HeroCardTitle>
                 <HeroCardDescription>
                     I am a 29 year old Front End student at JENSEN Yrkes Högskola in Gothenburg currently looking for work. I like to bring designs to life and
                     figure out how certain logics of code work as well as how to implement them in my projects.<br /><br />

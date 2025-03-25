@@ -47,7 +47,7 @@ export default function Contact() {
     <div className="w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl relative">
       <div className="flex flex-col items-start justify-center gap-2">
         <h1 className="text-[1.5rem] font-bold text-white">Get in touch with me!</h1>
-        <h2 className="text-[1rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>
+        <h2 className="text-[1rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I&apos;ll always get back to you as soon as I can.</h2>
       </div>
       <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
         <Form {...form}>
