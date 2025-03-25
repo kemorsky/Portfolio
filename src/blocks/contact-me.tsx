@@ -44,14 +44,14 @@ export default function Contact() {
       };
 
   return (
-    <div className="z-50 w-full bg-Customs-Card inline-flex flex-col items-start justify-center self-center gap-6 px-4 py-3 rounded-xl lg:m-0 relative">
+    <div className="w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl relative">
       <div className="flex flex-col items-start justify-center gap-2">
         <h1 className="text-[1.5rem] font-bold text-white">Get in touch with me!</h1>
         <h2 className="text-[1rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I'll always get back to you as soon as I can.</h2>
       </div>
-      <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full h-full inline-flex flex-col">
+      <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
         <Form {...form}>
-          <section className="inline-flex items-center justify-center gap-3">
+          <section className="inline-flex flex-col sm:flex-row items-center justify-center sm:gap-3">
             <FormField
               control={form.control}
               name="firstName"
@@ -90,7 +90,7 @@ export default function Contact() {
                   </FormItem>
               )}/>
         </Form>
-        <Button type="submit" variant="submit" size="submit" className="self-end mt-20">Submit</Button>
+        <Button type="submit" variant="submit" size="submit" className="self-end mt-[5.5rem]">Submit</Button>
       </form>
     </div>
     

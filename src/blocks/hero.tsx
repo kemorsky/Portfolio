@@ -2,7 +2,7 @@ import { HeroCard, HeroCardTitle, HeroCardDescription} from "@/components/ui/car
 
 export default function Hero() {
     return (
-        <div id="home" className="w-full intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-y-in-[25%]">
+        <div className="w-full intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[25%]">
             <HeroCard>
                 <HeroCardTitle>Hey, I'm Kamil.</HeroCardTitle>
                 <HeroCardDescription>

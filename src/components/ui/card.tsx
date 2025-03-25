@@ -9,7 +9,7 @@ const AboutCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-[22rem] inline-flex flex-col items-start justify-center gap-2 px-4 py-4 rounded-xl bg-Customs-Card text-white shadow",
+      "min-w-[22rem] inline-flex flex-col md:flex-row items-start justify-center gap-2 px-4 py-4 rounded-xl bg-Customs-Card text-white shadow",
       className
     )}
     {...props}
@@ -23,7 +23,7 @@ const AboutCardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col space-y-1.5", className)}
+    className={cn("w-[9rem] h-[9rem] rounded-full overflow-hidden", className)}
     {...props}
   />
 ))
@@ -47,7 +47,7 @@ const AboutCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <span
     ref={ref}
-    className={cn("w-[21rem] flex items-center justify-start gap-2 font-[Open_Sans] text-[1rem] leading-[1.25rem] text-white/90", className)}
+    className={cn("max-w-[21rem] flex items-center justify-start gap-2 font-[Open_Sans] text-[1rem] leading-[1.25rem] text-white/90", className)}
     {...props}
   />
 ))
@@ -290,7 +290,7 @@ const ProjectsCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full max-w-[27.125rem] max-h-[26rem] sm:h-[28rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer hover:translate-y-[-0.5rem] transition-all duration-200",
+      "w-full max-w-[27.125rem] h-[30rem] sm:h-[28rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-5 rounded-xl bg-Customs-Card shadow cursor-pointer md:hover:translate-y-[-0.5rem] transition-all duration-200",
       className
     )}
     {...props}
@@ -348,7 +348,7 @@ const ProjectsCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-full inline-flex flex-col items-start justify-center gap-3", className)}
+    className={cn("w-full h-[12rem] inline-flex flex-col items-start justify-start gap-3", className)}
     {...props}
   />
 ))
@@ -360,7 +360,7 @@ const ProjectsCardSkills = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("inline-flex items-center justify-start flex-wrap gap-2.5", className)}
+    className={cn("inline-flex items-center justify-start flex-wrap gap-2.5 mt-[2rem]", className)}
     {...props}
   />
 ))

@@ -14,16 +14,16 @@ type Project = {
 
 export default function Projects() {
     return (
-        <div className="z-50 w-full inline-flex items-start justify-center flex-col gap-6">
+        <div className="z-40 w-full inline-flex items-start justify-center flex-col gap-6">
             <h2 className="text-3xl font-bold text-white">My Projects</h2>
-            <div id="projects" className="w-full h-full inline-flex flex-row overflow-x-scroll snap-x snap-center lg:overflow-visible lg:grid lg:grid-cols-2 lg:snap-none items-start justify-start gap-2 lg:gap-6">
+            <div id="projects" className="w-full min-h-[30rem] inline-flex flex-row overflow-x-scroll snap-x snap-center lg:overflow-visible lg:grid lg:grid-cols-2 lg:snap-none items-start justify-start gap-2 lg:gap-6">
                 {projectsData.projects.map((project: Project) => {
                     return (
-                        <ProjectsCard key={project.id} className="">
+                        <ProjectsCard key={project.id}>
                             <Link href="https://github.com/kemorsky?tab=repositories">
                                 <ProjectsCardContent>
                                     <ProjectsCardHeader>
-                                        <Image src={project.image} alt="project 1 image" width={800} height={550} 
+                                        <Image src={project.image} alt="project image" width={800} height={550} 
                                                className='w-full h-full object-cover'/>
                                     </ProjectsCardHeader>
                                     <ProjectsCardDescription>

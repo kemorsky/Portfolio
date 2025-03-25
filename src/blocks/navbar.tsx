@@ -7,7 +7,7 @@ export default function Navbar() {
     const scrollToSection = function (element_id: string) {
         const element = document.getElementById(element_id);
         element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-    }
+    };
 
     return (
         <header className="w-full max-w-[90rem] z-50 h-[6.25rem] bg-background/80 backdrop-blur-md rounded-2xl fixed top-0 self-center overflow-hidden">

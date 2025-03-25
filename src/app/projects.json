@@ -4,7 +4,7 @@
             "id": 1,
             "image": "/images/projects/project-2.png",
             "name": "Kollin Landing Page",
-            "description": "Renovated landing page of Kollin based on a vague wireframe from the company. Individual project.",
+            "description": "Individual renovation of a landing page for Kollin based on a wireframe.",
             "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN", "Rombo"]
         },
         {
