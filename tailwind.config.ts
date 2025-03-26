@@ -12,13 +12,15 @@ export default {
   	extend: {
 		fontFamily: {
 			inter: ['Inter', 'sans-serif'],
+			"dm-sans": ['DM Sans', 'sans-serif'],
 		},
   		colors: {
 			Customs: {
 				Primary: "rgb(0, 0, 40)",
 				// Primary: "hsl(224, 26%, 17%)",
 				backgroundEclipse: "hsl(353, 51%, 46%)",
-				Card: "hsl(0, 0%, 10%)",
+				// Card: "hsl(0, 0%, 10%)",
+				Card: "hsl(224, 26%, 17%)",
 				aboutButtons: "hsl(51, 100%, 50%)",
 				projectTools: "hsl(32, 95%, 44%)",
 			},

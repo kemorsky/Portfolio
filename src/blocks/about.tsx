@@ -19,7 +19,7 @@ export default function About() {
                     <section className="inline-flex flex-col items-start justify-center gap-1.5">
                         <AboutCardTitle>Kamil Romanowicz</AboutCardTitle>
                         <AboutCardSubTitle>Front End Developer <br /> Based in Gothenburg, Sweden</AboutCardSubTitle>
-                        <AboutCardDescription>Designing and learning how code works. For clients and myself alike.</AboutCardDescription>
+                        <AboutCardDescription>I&apos;m a Front End student currently seeking employment. I like to bring designs to life and learn new ways of coding websites and applications.</AboutCardDescription>
                     </section>
                     <AboutCardFooter>
                         <section className="inline-flex items-center gap-1 text-2xl">
