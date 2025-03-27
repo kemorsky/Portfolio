@@ -43,8 +43,8 @@ export default function Experience() {
     }, []);
 
     return (
-        <div className="w-full inline-flex flex-col items-center justify-center self-center gap-[2.5rem] text-white intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-25%]">
-            <h2 className="text-3xl font-bold text-white self-start">Experience</h2>
+        <div className="w-full inline-flex flex-col items-center justify-center self-center gap-4 text-white intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-25%]">
+            <h2 className="text-3xl font-bold font-dm-sans text-white self-start">Experience</h2>
             <Tabs value={activeTab} onValueChange={setActiveTab} className="rounded-[0.5rem] shadow overflow-hidden inline-flex flex-col gap-4">
                 <TabsList>
                     <TabsTrigger value="education">Education</TabsTrigger>

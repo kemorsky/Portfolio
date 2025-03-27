@@ -14,6 +14,11 @@ export default {
 			inter: ['Inter', 'sans-serif'],
 			"dm-sans": ['DM Sans', 'sans-serif'],
 		},
+		animation: {
+			fromAbove: "intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]",
+			fromRight: "intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[10rem]",
+			fromLeft: "intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[-10rem]",
+		},
   		colors: {
 			Customs: {
 				Primary: "rgb(0, 0, 40)",

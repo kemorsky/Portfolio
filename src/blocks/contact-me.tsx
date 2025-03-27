@@ -44,10 +44,10 @@ export default function Contact() {
       };
 
   return (
-    <div className="w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl relative">
+    <div className="z-50 w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-6 px-4 py-3 rounded-xl relative">
       <div className="flex flex-col items-start justify-center gap-2">
-        <h1 className="text-[1.5rem] font-bold text-white">Get in touch with me!</h1>
-        <h2 className="text-[1rem] text-white/80">Job opportunities, design ideas, or general questions? Ask away! I&apos;ll always get back to you as soon as I can.</h2>
+        <h1 className="text-3xl font-bold text-white font-dm-sans">Get in touch with me</h1>
+        <h2 className="text-[1rem] text-white/80 font-dm-sans">Job opportunities, design ideas, or general questions? Ask away! I&apos;ll always get back to you as soon as I can.</h2>
       </div>
       <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
         <Form {...form}>
@@ -59,7 +59,7 @@ export default function Contact() {
                   <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                          <Input {...field} />
+                          <Input placeholder="Name" {...field} />
                       </FormControl>
                       <FormMessage />
                   </FormItem>
@@ -71,7 +71,7 @@ export default function Contact() {
                   <FormItem>
                       <FormLabel>E-mail</FormLabel>
                       <FormControl>
-                          <Input {...field} />
+                          <Input placeholder="E-mail" {...field} />
                       </FormControl>
                       <FormMessage />
                   </FormItem>
@@ -81,7 +81,7 @@ export default function Contact() {
               control={form.control}
               name="message"
               render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="h-full">
                       <FormLabel>Message</FormLabel>
                       <FormControl>
                           <Textarea placeholder="Your message here..." {...field} />
@@ -90,7 +90,7 @@ export default function Contact() {
                   </FormItem>
               )}/>
         </Form>
-        <Button type="submit" variant="submit" size="submit" className="self-end mt-[5.5rem]">Submit</Button>
+        <Button type="submit" variant="submit" size="submit" className="self-end mt-[1.5rem]">Submit</Button>
       </form>
     </div>
     

@@ -1,3 +1,5 @@
+'use client'
+
 import { AboutCard, AboutCardHeader, AboutCardTitle, AboutCardSubTitle, AboutCardDescription, AboutCardFooter} from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download } from 'lucide-react'
@@ -10,7 +12,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div id='home' className="w-full z-45 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]">
+        <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]">
             <AboutCard>
                 <AboutCardHeader>
                     <Image className="object-fit w-full h-full" src="/images/about/profile-picture.jpg" alt="profile picture" width={60} height={60} />
@@ -18,7 +20,11 @@ export default function About() {
                 <section className="w-full inline-flex flex-col items-center justify-center gap-4">
                     <section className="inline-flex flex-col items-start justify-center gap-1.5">
                         <AboutCardTitle>Kamil Romanowicz</AboutCardTitle>
-                        <AboutCardSubTitle>Front End Developer <br /> Based in Gothenburg, Sweden</AboutCardSubTitle>
+                        <AboutCardSubTitle>Front End Developer</AboutCardSubTitle>
+                        <span className="group leading-[1.25rem]">
+                            <AboutCardSubTitle className="inline-block group-hover:hidden transition-transform">Based in Gothenburg, Sweden <Image className="inline-block group-hover:hidden transition-transform" src={'/images/about/64px-Flag_of_Sweden.svg.png'} alt="sweden flag" width={32} height={24}/></AboutCardSubTitle>
+                            <AboutCardSubTitle className="hidden group-hover:inline-block transition-transform">But originally from Poland! <Image className="hidden group-hover:inline-block transition-transform" src={'/images/about/64px-Flag_of_Poland.svg.png'} alt="poland flag" width={32} height={24}/></AboutCardSubTitle>
+                        </span>
                         <AboutCardDescription>I&apos;m a Front End student currently seeking employment. I like to bring designs to life and learn new ways of coding websites and applications.</AboutCardDescription>
                     </section>
                     <AboutCardFooter>
