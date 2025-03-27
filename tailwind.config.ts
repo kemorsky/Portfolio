@@ -21,9 +21,8 @@ export default {
 		},
   		colors: {
 			Customs: {
-				Primary: "rgb(0, 0, 40)",
-				// Primary: "hsl(224, 26%, 17%)",
-				backgroundEclipse: "hsl(353, 51%, 46%)",
+				Primary: "hsl(240, 100%, 7.8%)",
+				backgroundEclipse: "hsl(210, 75%, 35%)",
 				// Card: "hsl(0, 0%, 10%)",
 				Card: "hsl(224, 26%, 17%)",
 				aboutButtons: "hsl(51, 100%, 50%)",
