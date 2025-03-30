@@ -44,7 +44,7 @@ const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
-      "bg-Customs-Card rounded-[0.75rem] overflow-hidden",
+      "bg-Customs-Card shadow-[0px_10px_20px_0px_#2a4365] rounded-[0.75rem] overflow-hidden",
       className
     )}
     {...props}
