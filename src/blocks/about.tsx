@@ -12,12 +12,12 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]">
+        <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%] shadow-[0px_10px_30px_0px_#2a4365]">
             <AboutCard>
                 <AboutCardHeader>
-                    <Image className="object-fit w-full h-full" src="/images/about/profile-picture.jpg" alt="profile picture" width={60} height={60} />
+                    <Image className="object-fit w-full h-full" src="/images/about/profile-picture.jpg" alt="profile picture" width={144} height={144} />
                 </AboutCardHeader>
-                <section className="w-full inline-flex flex-col items-center justify-center gap-4">
+                <section className="w-full inline-flex flex-col items-start justify-center gap-4">
                     <section className="inline-flex flex-col items-start justify-center gap-1.5">
                         <AboutCardTitle>Kamil Romanowicz</AboutCardTitle>
                         <AboutCardSubTitle>Front End Developer</AboutCardSubTitle>

@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
   	extend: {
+		boxShadow: {
+			'card': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+		  },
 		fontFamily: {
 			inter: ['Inter', 'sans-serif'],
 			"dm-sans": ['DM Sans', 'sans-serif'],
@@ -24,7 +27,7 @@ export default {
 				Primary: "hsl(240, 100%, 7.8%)",
 				backgroundEclipse: "hsl(210, 75%, 35%)",
 				// Card: "hsl(0, 0%, 10%)",
-				Card: "hsl(224, 26%, 17%)",
+				Card: "hsl(224, 35%, 20%)",
 				aboutButtons: "hsl(51, 100%, 50%)",
 				projectTools: "hsl(32, 95%, 44%)",
 			},

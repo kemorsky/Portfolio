@@ -32,7 +32,7 @@ export default function Projects() {
                                         <ProjectsCardSkills>
                                             {project.tools.map((tool: string) => {
                                                 return (
-                                                    <div key={tool} className='inline-flex items-center rounded-[0.5rem] text-xs tracking-wide font-semibold text-white/90 bg-Customs-projectTools min-w-10 h-8 px-2 py-1'>
+                                                    <div key={tool} className='inline-flex items-center justify-center rounded-[1rem] text-xs tracking-wide font-medium font-inter text-white/90 bg-Customs-projectTools min-w-[3.75rem] h-8 px-2 py-1'>
                                                         {tool}</div>
                                                     )
                                             })}
