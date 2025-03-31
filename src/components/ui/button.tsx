@@ -18,9 +18,9 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-11 min-w-[8.5rem] px-3 py-2 text-[1rem] font-dm-sans font-semibold rounded-[0.5rem]",
+        default: "h-11 min-w-[8.5rem] px-3 py-2 text-[1rem] font-dm-sans font-semibold text-center rounded-[0.5rem] transition-transform hover:scale-105 duration-200",
         discover:"h-11 w-[8rem] px-3 py-2 text-[1rem] font-semibold",
-        submit: "w-[8rem] h-11 px-3 py-2 text-[1rem] font-dm-sans font-semibold rounded-[0.5rem] border border-black",
+        submit: "w-[8rem] h-11 px-3 py-2 text-[1rem] font-dm-sans font-semibold rounded-[0.5rem] border border-black transition-transform hover:scale-105 duration-200",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",
