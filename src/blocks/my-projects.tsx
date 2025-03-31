@@ -20,15 +20,18 @@ export default function Projects() {
                 {projectsData.projects.map((project: Project) => {
                     return (
                         <ProjectsCard key={project.id}>
-                            <Link href="https://github.com/kemorsky?tab=repositories">
                                 <ProjectsCardContent>
-                                    <ProjectsCardHeader>
-                                        <Image src={project.image} alt="project image" width={800} height={550} 
-                                               className='w-full h-full object-cover'/>
-                                    </ProjectsCardHeader>
+                                    <Link href="https://github.com/kemorsky?tab=repositories">
+                                        <ProjectsCardHeader>
+                                            <Image src={project.image} alt="project image" width={800} height={550} 
+                                                className='w-full h-full object-cover'/>
+                                        </ProjectsCardHeader>
+                                    </Link>
                                     <ProjectsCardDescription>
-                                        <ProjectsCardTitle>{project.name}</ProjectsCardTitle>
-                                        <ProjectsCardSubTitle>{project.description}</ProjectsCardSubTitle>
+                                        <section className="h-[6rem]">
+                                            <ProjectsCardTitle>{project.name}</ProjectsCardTitle>
+                                            <ProjectsCardSubTitle>{project.description}</ProjectsCardSubTitle>
+                                        </section>
                                         <ProjectsCardSkills>
                                             {project.tools.map((tool: string) => {
                                                 return (
@@ -39,7 +42,6 @@ export default function Projects() {
                                         </ProjectsCardSkills>
                                     </ProjectsCardDescription>
                                 </ProjectsCardContent>
-                            </Link>
                         </ProjectsCard>
                     )
                 })}

@@ -11,7 +11,7 @@ import Contact from "@/blocks/contact-me";
 export default function Home() {
   return (
     <ObserverProvider>
-      <div className="flex items-center justify-center w-screen h-full bg-Customs-Primary scroll-smooth overflow-hidden">
+      <div className="flex items-center justify-center h-full bg-Customs-Primary scroll-smooth overflow-hidden">
         <main className="z-45 w-full h-full flex flex-col items-center px-4 lg:px-0 gap-8 justify-start relative mt-[7rem]">
         <Navbar/>
           <div className="z-40 max-w-[55rem] h-full w-full flex flex-col items-start justify-center gap-8 sm:gap-12 md:gap-16 relative">

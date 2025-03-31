@@ -21,7 +21,7 @@ type Skill = {
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.languages.map((language: Skill) => {
                             return (
-                                <div key={language.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-blue-700/75 min-w-16 h-8 px-3 py-2 text-white/90'>{language.name}</div>
+                                <div key={language.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#020730] min-w-16 h-8 px-3 py-2 text-white/90'>{language.name}</div>
                             );
                         })}
                     </div>
@@ -31,7 +31,7 @@ type Skill = {
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.frameworks.map((framework: Skill) => {
                             return (
-                                <div key={framework.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-cyan-600 min-w-16 h-8 px-3 py-2 text-white/90'>{framework.name}</div>
+                                <div key={framework.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#9CC5A1] min-w-16 h-8 px-3 py-2 text-white/90'>{framework.name}</div>
                             );
                         })}
                     </div>
@@ -41,7 +41,7 @@ type Skill = {
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.backends.map((backend: Skill) => {
                             return (
-                                <div key={backend.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-red-600/80 min-w-16 h-8 px-3 py-2 text-white/90'>{backend.name}</div>
+                                <div key={backend.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#DE9E36] min-w-16 h-8 px-3 py-2 text-white/90'>{backend.name}</div>
                             );
                         })}
                     </div>
@@ -51,7 +51,7 @@ type Skill = {
                     <div className='inline-flex items-center flex-wrap gap-2'>
                         {skillsData.skills.tools.map((tool: Skill) => {
                             return (
-                                <div key={tool.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-amber-600 min-w-16 h-8 px-3 py-2 text-white/90'>{tool.name}</div>
+                                <div key={tool.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#C08497] min-w-16 h-8 px-3 py-2 text-white/90'>{tool.name}</div>
                             );
                         })}
                     </div>
