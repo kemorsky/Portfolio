@@ -43,7 +43,7 @@ export default function Experience() {
     }, []);
 
     return (
-        <div className="w-full inline-flex flex-col items-center justify-center self-center gap-4 text-white intersect-once intersect:motion-opacity-in-0 intersect:motion-translate-x-in-[-25%]">
+        <div className="w-full inline-flex flex-col items-center justify-center self-center gap-4 text-white intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-x-in-[-25%]">
             <h2 className="text-3xl font-bold font-dm-sans text-white self-start">Experience</h2>
             <Tabs value={activeTab} onValueChange={setActiveTab} className="rounded-[0.5rem] inline-flex flex-col gap-4 ">
                 <TabsList>

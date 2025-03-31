@@ -29,9 +29,9 @@ export default function About() {
                     </section>
                     <AboutCardFooter>
                         <section className="inline-flex items-center gap-1 text-2xl">
-                            <Link className='w-10 h-10 hover:scale-105 transition-all duration-100 flex items-center justify-center rounded-[0.5rem] hover:bg-gray-500' aria-label="LinkedIn" href="https://www.linkedin.com/in/kamil-romanowicz-52284b2a9/"><FaLinkedinIn className="text-white" /></Link>
-                            <Link className='w-10 h-10  hover:scale-105 transition-all duration-100 flex items-center justify-center rounded-[0.5rem] hover:bg-gray-500' href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white" /></Link>
-                            <a className="w-10 h-10 hover:scale-105 transition-all duration-100 flex items-center justify-center rounded-[0.5rem] hover:bg-gray-500" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white"/></a>
+                            <Link className='w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-gray-600 group' aria-label="LinkedIn" href="https://www.linkedin.com/in/kamil-romanowicz-52284b2a9/"><FaLinkedinIn className="text-white group-hover:animate-wiggle transform transition-transform duration-1000" /></Link>
+                            <Link className='w-10 h-10  hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-gray-600 group' href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white group-hover:animate-wiggle transform transition-transform duration-1000" /></Link>
+                            <a className="w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-gray-600 group" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white group-hover:animate-wiggle transform transition-transform duration-1000"/></a>
                         </section>
                         <Button variant="hire-me" size="default"><Download/>Download CV</Button>
                     </AboutCardFooter>

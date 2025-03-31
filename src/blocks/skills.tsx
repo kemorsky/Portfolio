@@ -11,7 +11,7 @@ type Skill = {
             <article className='flex flex-col gap-4 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[-10rem]'>
                 <h1 className='text-3xl font-bold font-dm-sans'>Skills</h1>
                 <span className=''>
-                    <p className='max-w-[40rem] lg:w-[30rem] font-inter text-base'>I am focused on learning how to optimize user experience by creating intuitive, seamless interfaces that are both user-friendly and easy to maintain for developers.
+                    <p className='max-w-[40rem] lg:w-[30rem] font-inter text-base text-white/85'>I am focused on learning how to optimize user experience by creating intuitive, seamless interfaces that are both user-friendly and easy to maintain for developers.
                         I am also interested in exploring various aspects of web development and applying this knowledge to enhance my projects.</p>
                 </span>
             </article>
@@ -21,7 +21,7 @@ type Skill = {
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.languages.map((language: Skill) => {
                             return (
-                                <div key={language.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#020730] min-w-16 h-8 px-3 py-2 text-white/90'>{language.name}</div>
+                                <div key={language.id} className='inline-flex items-center justify-center rounded-[1rem] border border-black text-[0.875rem] font-medium font-inter bg-[#020750] min-w-16 h-8 px-3 py-2 text-white'>{language.name}</div>
                             );
                         })}
                     </div>
@@ -31,7 +31,7 @@ type Skill = {
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.frameworks.map((framework: Skill) => {
                             return (
-                                <div key={framework.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#9CC5A1] min-w-16 h-8 px-3 py-2 text-white/90'>{framework.name}</div>
+                                <div key={framework.id} className='inline-flex items-center justify-center rounded-[1rem] border border-black text-[0.875rem] font-medium font-inter bg-[#76967a] min-w-16 h-8 px-3 py-2 text-white'>{framework.name}</div>
                             );
                         })}
                     </div>
@@ -41,7 +41,7 @@ type Skill = {
                     <div className='inline-flex items-center gap-2'>
                         {skillsData.skills.backends.map((backend: Skill) => {
                             return (
-                                <div key={backend.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#DE9E36] min-w-16 h-8 px-3 py-2 text-white/90'>{backend.name}</div>
+                                <div key={backend.id} className='inline-flex items-center justify-center rounded-[1rem] border border-black text-[0.875rem] font-medium font-inter bg-[#DE9E36] min-w-16 h-8 px-3 py-2 text-white'>{backend.name}</div>
                             );
                         })}
                     </div>
@@ -51,7 +51,7 @@ type Skill = {
                     <div className='inline-flex items-center flex-wrap gap-2'>
                         {skillsData.skills.tools.map((tool: Skill) => {
                             return (
-                                <div key={tool.id} className='inline-flex items-center justify-center rounded-[1rem] border border-gray-700 text-[0.875rem] font-medium font-inter bg-[#C08497] min-w-16 h-8 px-3 py-2 text-white/90'>{tool.name}</div>
+                                <div key={tool.id} className='inline-flex items-center justify-center rounded-[1rem] border border-black text-[0.875rem] font-medium font-inter bg-[#C08497] min-w-16 h-8 px-3 py-2 text-white'>{tool.name}</div>
                             );
                         })}
                     </div>

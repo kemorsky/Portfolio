@@ -16,11 +16,17 @@ export default {
 		fontFamily: {
 			inter: ['Inter', 'sans-serif'],
 			"dm-sans": ['DM Sans', 'sans-serif'],
+			roboto: ['Roboto', 'sans-serif'],
+		},
+		keyframes: {
+			wiggle: {
+				"0%, 33%": {transform: "rotate(10deg)"},
+				"34%, 66%": {transform: "rotate(10deg)"},
+				"67%, 100%": {transform: "rotate(10deg)"},
+			}
 		},
 		animation: {
-			fromAbove: "intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]",
-			fromRight: "intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[10rem]",
-			fromLeft: "intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[-10rem]",
+			wiggle: "wiggle 3s ease-in-out 1",
 		},
   		colors: {
 			Customs: {
@@ -28,7 +34,7 @@ export default {
 				backgroundEclipse: "hsl(210, 75%, 35%)",
 				// Card: "hsl(0, 0%, 10%)",
 				Card: "hsl(224, 35%, 20%)",
-				aboutButtons: " 	hsl(219, 73%, 61%)",
+				aboutButtons: "hsl(51, 100%, 50%)",
 				projectTools: "hsl(37, 72%, 54%)",
 			},
   			background: 'hsl(var(--background))',
