@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:"bg-sky-500 hover:bg-sky-600 text-white shadow-sm transition-colors ",
-        "hire-me":"bg-Customs-aboutButtons hover:bg-Customs-aboutButtons/80 text-black shadow-sm border border-black",
+        "hire-me":"bg-Customs-CVButton hover:bg-Customs-CVButton/80 text-black shadow-sm border border-black",
         discover: "rounded-2xl bg-white text-black border border-black hover:bg-white/80",
         submit:"border border-input bg-neutral-200 hover:bg-gray-400 transition-colors shadow-sm hover:text-accent-foreground",
         secondary:"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",

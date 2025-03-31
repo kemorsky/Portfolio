@@ -26,7 +26,7 @@ export default {
 			}
 		},
 		animation: {
-			wiggle: "wiggle 3s ease-in-out 1",
+			wiggle: "wiggle 3s ease-in-out",
 		},
   		colors: {
 			Customs: {
@@ -34,7 +34,8 @@ export default {
 				backgroundEclipse: "hsl(210, 75%, 35%)",
 				// Card: "hsl(0, 0%, 10%)",
 				Card: "hsl(224, 35%, 20%)",
-				aboutButtons: "hsl(51, 100%, 50%)",
+				CVButton: "hsl(51, 100%, 50%)",
+				socialsButtons: "hsl(224, 35%, 30%)",
 				projectTools: "hsl(37, 72%, 54%)",
 			},
   			background: 'hsl(var(--background))',
