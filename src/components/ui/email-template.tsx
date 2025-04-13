@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface EmailTemplateProps {
+type EmailTemplateProps = {
   firstName: string;
   email: string;
   message: string;

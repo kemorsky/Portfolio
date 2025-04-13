@@ -24,7 +24,7 @@ export default function Projects() {
                                     <Link href="https://github.com/kemorsky?tab=repositories">
                                         <ProjectsCardHeader>
                                             <Image src={project.image} alt="project image" width={800} height={550} 
-                                                className='w-full h-full object-cover'/>
+                                                className='h-full object-cover'/>
                                         </ProjectsCardHeader>
                                     </Link>
                                     <ProjectsCardDescription>

@@ -31,15 +31,16 @@ export default function Contact() {
       const onSubmit = async (data: z.infer<typeof formSchema>) => {
         const validation = formSchema.safeParse(data);
         if (!validation.success) {
-          console.error("🚨 Validation failed:", validation.error.format());
+          console.error("Validation failed:", validation.error.format());
           return;
         }
         try {
           await send(validation.data);
-          alert("✅ Email sent successfully!"); // Inform the user upon success
+          alert("Email received."); // Inform the user upon success
+          form.reset();
         } catch (error) {
-            console.error("🚨 Error sending email:", error);
-            alert("🚨 Failed to send email",);
+            alert("Error sending mail. Try again or contact me directly at kamil.romanowicz95@gmail.com",);
+            throw error;
         };
       };
 

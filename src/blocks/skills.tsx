@@ -12,7 +12,7 @@ type Skill = {
                 <h1 className='text-3xl font-bold font-dm-sans'>Skills</h1>
                 <span className=''>
                     <p className='max-w-[40rem] lg:w-[30rem] font-inter text-base text-white/85'>I am focused on learning how to optimize user experience by creating intuitive, seamless interfaces that are both user-friendly and easy to maintain for developers.
-                        I am also interested in exploring various aspects of web development and applying this knowledge to enhance my projects.</p>
+                        I am also interested in exploring backend technologies and learning various aspects of web development and applying this knowledge to enhance my projects. I took a great interest in database development during my recent internship and would love to get an opportunity to learn more about it.</p>
                 </span>
             </article>
             <div className="w-full inline-flex flex-col items-start gap-4 text-white lg:mt-[3.125rem]">

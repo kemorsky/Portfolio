@@ -1,6 +1,6 @@
 'use client'
 
-import { AboutCard, AboutCardHeader, AboutCardTitle, AboutCardSubTitle, AboutCardDescription, AboutCardFooter} from "@/components/ui/card"
+import { AboutCard, AboutCardTitle, AboutCardSubTitle, AboutCardDescription, AboutCardFooter} from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download } from 'lucide-react'
 
@@ -14,9 +14,9 @@ export default function About() {
     return (
         <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%] shadow-[0px_10px_20px_0px_#2a4365]">
             <AboutCard>
-                <AboutCardHeader>
+                {/* <AboutCardHeader>
                     <Image className="object-fit w-full h-full" src="/images/about/profile-picture.jpg" alt="profile picture" width={144} height={144} />
-                </AboutCardHeader>
+                </AboutCardHeader> */}
                 <section className="w-full inline-flex flex-col items-start justify-center gap-4">
                     <section className="inline-flex flex-col items-start justify-center gap-1.5">
                         <AboutCardTitle>Kamil Romanowicz</AboutCardTitle>
@@ -33,7 +33,9 @@ export default function About() {
                             <Link className='group/follow w-10 h-10  hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
                             <a className="group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></a>
                         </section>
-                        <Button variant="hire-me" size="default"><Download/>Download CV</Button>
+                        <a href="/files/CV - Kamil Romanowicz.pdf" download>
+                            <Button variant="hire-me" size="default"><Download/>Download CV</Button>
+                        </a>
                     </AboutCardFooter>
                 </section>
             </AboutCard>

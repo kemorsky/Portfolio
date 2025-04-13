@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": 1,
-            "image": "/images/projects/project-2.png",
+            "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
             "name": "Kollin Landing Page",
             "description": "Individual renovation of a landing page for Kollin based on a wireframe.",
             "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN", "Rombo"]
@@ -16,9 +16,16 @@
         },
         {
             "id": 3,
-            "image": "/images/projects/project-3.png",
-            "name": "Musically Webshop",
-            "description": "Webshop on which one can purchase and sell used musical instruments.",
+            "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
+            "name": "Mormor Dagny's Bageri",
+            "description": "A web application designed to digitalize data and order management for a bakery.",
+            "tools": ["TypeScript", "React", "TailwindCSS", "MySQL", "Postman"]
+        },
+        {
+            "id": 4,
+            "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
+            "name": "Recipe Finder",
+            "description": "A website developed to yield recipes based on advanced search querries.",
             "tools": ["TypeScript", "React", "TailwindCSS"]
         }
     ]
