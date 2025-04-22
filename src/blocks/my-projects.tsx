@@ -9,7 +9,8 @@ type Project = {
     image: string,
     name: string,
     description: string,
-    tools: string[]
+    tools: string[],
+    link?: string
 }
 
 export default function Projects() {
@@ -21,7 +22,7 @@ export default function Projects() {
                     return (
                         <ProjectsCard key={project.id}>
                                 <ProjectsCardContent>
-                                    <Link href="https://github.com/kemorsky?tab=repositories">
+                                    <Link href={project.link ?? ''}>
                                         <ProjectsCardHeader>
                                             <Image src={project.image} alt="project image" width={800} height={550} 
                                                 className='h-full object-cover'/>

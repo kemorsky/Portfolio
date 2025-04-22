@@ -3,16 +3,19 @@
         {
             "id": 1,
             "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
-            "name": "Kollin Landing Page",
+            "name": "Kollin Landing Page - Personal",
             "description": "Individual renovation of a landing page for Kollin based on a wireframe.",
-            "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN", "Rombo"]
+            "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN", "Rombo"],
+            "link": "https://github.com/kemorsky/Kollin-Landing-Page"
         },
         {
             "id": 2,
             "image": "/images/projects/project-1.png",
-            "name": "Kollin Landing Page",
+            "name": "Kollin Landing Page - LiA",
             "description": "Renovated landing page of Kollin as part of my internship.",
-            "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN"]
+            "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN"],
+            "link": "https://github.com/kemorsky/kollin-lia-landing-page"
+            
         },
         {
             "id": 3,

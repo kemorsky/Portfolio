@@ -26,10 +26,10 @@ export default function Navbar() {
                             <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
                             group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
                         </span>
-                        <Link className="hover:text-gray-500 hover:transition-colors group relative" href="#">Blog
+                        {/* <Link className="hover:text-gray-500 hover:transition-colors group relative" href="#">Blog
                             <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
                             group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
-                        </Link>
+                        </Link> */}
                         <span onClick={() => scrollToSection('contact-me')} className="hover:text-gray-500 hover:transition-colors group relative cursor-pointer">Contact
                             <span className="absolute bottom-[-3px] left-0 w-full h-[2px] bg-gradient-to-r from-sky-500 to-red-300 scale-x-0
                             group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-10"></span>
