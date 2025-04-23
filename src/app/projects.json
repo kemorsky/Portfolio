@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": 1,
-            "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
+            "image": "/images/projects/project-1.png",
             "name": "Kollin Landing Page - Personal",
             "description": "Individual renovation of a landing page for Kollin based on a wireframe.",
             "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN", "Rombo"],
@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "image": "/images/projects/project-1.png",
+            "image": "/images/projects/project-2.png",
             "name": "Kollin Landing Page - LiA",
             "description": "Renovated landing page of Kollin as part of my internship.",
             "tools": ["TypeScript", "Next.Js", "TailwindCSS", "ShadCN"],
