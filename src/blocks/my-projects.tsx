@@ -1,4 +1,5 @@
-import { ProjectsCard, ProjectsCardContent, ProjectsCardHeader, ProjectsCardTitle, ProjectsCardSubTitle, ProjectsCardDescription, ProjectsCardSkills } from "@/components/ui/card"
+import { ProjectsCard, ProjectsCardContent, ProjectsCardHeader, ProjectsCardTitle, 
+         ProjectsCardSubTitle, ProjectsCardDescription, ProjectsCardSkills } from "@/components/ui/card"
 import projectsData from "../../src/app/projects.json"
 
 import Image from "next/image"
