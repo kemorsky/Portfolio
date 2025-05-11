@@ -18,14 +18,14 @@
       },
       "work": {
         "key1": {
-          "image": "/images/experience/sbor.png",
+          "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer - Intern",
-          "name": "Soft Technologies, Stenungsund (Remote)",
+          "name": "SoftTech Development, Stenungsund (Remote)",
           "date": "24 February 2025 - 02 May 2025",
-          "description": "Internship at a consult company operating from Stenungsund."
+          "description": "Internship at a consult company operating from Stenungsund. Built a web application for owner's secondary business (bakery)."
         },
         "key2": {
-          "image": "/images/experience/sbor.png",
+          "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer - Intern",
           "name": "K Hermodsson Development AB, Lund, Skåne (Remote)",
           "date": "23 November 2024 - 21 February 2025",
