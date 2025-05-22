@@ -2,16 +2,16 @@ import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import { marked } from 'marked';
 
-type PageProps = {
-    params: {slug: string};
-}
-
 export async function generateStaticParams() {
     const slugs = getAllPostSlugs();
     return slugs.map(slug => ({ slug }));
 };
 
-export default async function BlogPost({ params }: PageProps) {
+export default async function BlogPost({
+  params,
+}: {
+  params: { slug: string };
+}) {
     const post = await getPostBySlug(params.slug)
 
     if (!post) return notFound();

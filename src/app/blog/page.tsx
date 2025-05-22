@@ -20,7 +20,7 @@ export default async function Blog() {
                             {posts.map(post => (
                             <li key={post.id}>
                                 <Link href={`/blog/${post.id}`}>
-                                    <h2 className="text-xl font-semibold hover:underline">{post.title}</h2>
+                                    <h2 className="text-xl font-semibold text-white font-dm-sans hover:underline">{post.title}</h2>
                                     <p className="text-sm text-gray-500">{post.date}</p>
                                 </Link>
                             </li>
