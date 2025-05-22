@@ -2,7 +2,7 @@ import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import { marked } from 'marked';
 
-export function generateStaticParams() {
+export function generateStaticParams(): { slug: string }[] {
     const slugs = getAllPostSlugs();
     return slugs.map(slug => ({ slug }));
 };
