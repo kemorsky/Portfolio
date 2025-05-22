@@ -20,7 +20,7 @@ export function getAllPostSlugs(): string[] {
   return fs.readdirSync(postsDirectory).map(file => file.replace(/\.md$/, ''));
 }
 
-export function getPostBySlug(slug: string): PostData {
+export async function getPostBySlug(slug: string): Promise<PostData> {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -33,9 +33,9 @@ export function getPostBySlug(slug: string): PostData {
   };
 }
 
-export function getAllPosts(): PostData[] {
+export async function getAllPosts(): Promise<PostData[]> {
   const slugs = getAllPostSlugs();
-  const posts = slugs.map(getPostBySlug);
+  const posts = await Promise.all(slugs.map(getPostBySlug));
 
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }

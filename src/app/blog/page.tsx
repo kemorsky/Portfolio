@@ -4,8 +4,8 @@ import Navbar from "@/blocks/navbar";
 import { getAllPosts } from '@/lib/posts';
 import Link from "next/link";
 
-export default function Blog() {
-    const posts = getAllPosts();
+export default async function Blog() {
+    const posts = await getAllPosts();
 
     return (
         <ObserverProvider>

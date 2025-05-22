@@ -3,16 +3,16 @@ import { notFound } from "next/navigation";
 import { marked } from 'marked';
 
 type Props = {
-    params: { slug: string};
+    params: {slug: string};
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
     const slugs = getAllPostSlugs();
     return slugs.map(slug => ({ slug }));
 };
 
-export default function BlogPost({params}: Props) {
-    const post = getPostBySlug(params.slug)
+export default async function BlogPost({ params }: Props) {
+    const post = await getPostBySlug(params.slug)
 
     if (!post) return notFound();
 
