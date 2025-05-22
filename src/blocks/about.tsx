@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%] shadow-[0px_10px_20px_0px_#2a4365]">
+        <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card border border-Customs-Card-Border rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%] shadow-[0px_10px_20px_0px_#2a4365]">
             <AboutCard>
                 {/* <AboutCardHeader>
                     <Image className="object-fit w-full h-full" src="/images/about/profile-picture.jpg" alt="profile picture" width={144} height={144} />
@@ -29,11 +29,11 @@ export default function About() {
                     </section>
                     <AboutCardFooter>
                         <section className="inline-flex items-center gap-1 text-2xl">
-                            <Link className='group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' aria-label="LinkedIn" href="https://www.linkedin.com/in/kamil-romanowicz-52284b2a9/"><FaLinkedinIn className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
-                            <Link className='group/follow w-10 h-10  hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
-                            <a className="group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></a>
+                            <Link className='group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' aria-label="Navigate to LinkedIn" href="https://www.linkedin.com/in/kamil-romanowicz-52284b2a9/"><FaLinkedinIn className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
+                            <Link className='group/follow w-10 h-10  hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' aria-label="Navigate to GitHub" href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
+                            <a className="group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons" aria-label="Send E-mail" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></a>
                         </section>
-                        <a href="/files/CV - Kamil Romanowicz.pdf" download>
+                        <a href="/files/CV - Kamil Romanowicz.pdf" aria-label="Download CV PDF" download>
                             <Button variant="hire-me" size="default"><Download/>Download CV</Button>
                         </a>
                     </AboutCardFooter>

@@ -21,9 +21,9 @@ export default function Projects() {
             <div id="projects" className="w-full min-h-[30rem] inline-flex flex-row overflow-x-scroll snap-x snap-center lg:overflow-visible lg:grid lg:grid-cols-2 lg:snap-none items-start justify-start gap-2 lg:gap-6">
                 {projectsData.projects.map((project: Project) => {
                     return (
-                        <ProjectsCard key={project.id}>
+                        <ProjectsCard key={project.id} aria-label={`Project: ${project.name}`} tabIndex={0}>
                                 <ProjectsCardContent>
-                                    <Link href={project.link ?? ''}>
+                                    <Link aria-label="Navigate to Project's GitHub Page" href={project.link ?? ''}>
                                         <ProjectsCardHeader>
                                             <Image src={project.image} alt="project image" width={800} height={550} 
                                                 className='h-full object-cover'/>
