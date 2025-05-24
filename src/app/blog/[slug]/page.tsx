@@ -12,11 +12,10 @@ export default async function BlogPost({
 }: {
   params: { slug: string };
 }) {
-    const post = await getPostBySlug(params.slug)
+    const { slug } = await params;
+    const post = await getPostBySlug(slug)
 
     if (!post) return notFound();
-
-    const html = marked(post.content);
 
     return (
     <div className="max-w-2xl mx-auto p-4">
@@ -29,14 +28,14 @@ export default async function BlogPost({
               key={tag}
               className="bg-gray-200 text-gray-800 text-xs font-medium px-2 py-1 rounded"
             >
-              #{tag}
+              {tag}
             </span>
           ))}
         </div>
       )}
       <article
         className="prose"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: marked(post.content) }}
       />
     </div>
   );
