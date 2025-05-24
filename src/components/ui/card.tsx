@@ -9,7 +9,7 @@ const AboutCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "min-w-[22rem] inline-flex flex-col md:flex-row items-start justify-center gap-4 px-4 py-4 rounded-xl bg-Customs-Card text-white",
+      "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl bg-Customs-Card shadow",
       className
     )}
     {...props}
@@ -17,66 +17,29 @@ const AboutCard = React.forwardRef<
 ))
 AboutCard.displayName = "AboutCard"
 
-const AboutCardHeader = React.forwardRef<
+const AboutCardTitle = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-[9rem] md:min-w-[9rem] h-[9rem] rounded-full overflow-hidden", className)}
-    {...props}
-  />
-))
-AboutCardHeader.displayName = "AboutCardHeader"
-
-const AboutCardTitle = React.forwardRef<
-  HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement>
->(({ className, ...props }, ref) => (
-  <span
-    ref={ref}
-    className={cn("font-dm-sans font-semibold text-[1.4rem] leading-[1.5rem] text-white", className)}
+    className={cn("text-[1.125rem] leading-[1.5rem] text-white", className)}
     {...props}
   />
 ))
 AboutCardTitle.displayName = "AboutCardTitle"
 
-const AboutCardSubTitle = React.forwardRef<
-  HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement>
->(({ className, ...props }, ref) => (
-  <span
-    ref={ref}
-    className={cn("w-[16.5rem] flex items-center justify-start gap-2 font-dm-sans text-[1rem] leading-[1.25rem] text-white/90", className)}
-    {...props}
-  />
-))
-AboutCardSubTitle.displayName = "AboutCardSubTitle"
-
 const AboutCardDescription = React.forwardRef<
-  HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement>
->(({ className, ...props }, ref) => (
-  <span
-    ref={ref}
-    className={cn("max-w-[23rem] font-inter text-[0.875rem] leading-[1.25rem] text-white/75", className)}
-    {...props}
-  />
-))
-AboutCardDescription.displayName = "AboutCardDescription"
-
-
-const AboutCardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-[22rem] inline-flex items-center justify-start gap-4", className)}
+    className={cn("text-[1rem] leading-[1.35rem] text-white/85", className)}
     {...props}
   />
 ))
-AboutCardFooter.displayName = "AboutCardFooter"
+AboutCardDescription.displayName = "AboutCardDescription"
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -251,7 +214,7 @@ const HeroCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl bg-Customs-Card shadow",
+      "min-w-[22rem] inline-flex flex-col md:flex-row items-start justify-center gap-4 px-4 py-4 rounded-xl bg-Customs-Card text-white",
       className
     )}
     {...props}
@@ -259,29 +222,66 @@ const HeroCard = React.forwardRef<
 ))
 HeroCard.displayName = "HeroCard"
 
-const HeroCardTitle = React.forwardRef<
+const HeroCardHeader = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[1.125rem] leading-[1.5rem] text-white", className)}
+    className={cn("w-[9rem] md:min-w-[9rem] h-[9rem] rounded-full overflow-hidden", className)}
+    {...props}
+  />
+))
+HeroCardHeader.displayName = "HeroCardHeader"
+
+const HeroCardTitle = React.forwardRef<
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
+>(({ className, ...props }, ref) => (
+  <span
+    ref={ref}
+    className={cn("font-dm-sans font-semibold text-[1.4rem] leading-[1.5rem] text-white", className)}
     {...props}
   />
 ))
 HeroCardTitle.displayName = "HeroCardTitle"
 
+const HeroCardSubTitle = React.forwardRef<
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
+>(({ className, ...props }, ref) => (
+  <span
+    ref={ref}
+    className={cn("w-[16.5rem] flex items-center justify-start gap-2 font-dm-sans text-[1rem] leading-[1.25rem] text-white/90", className)}
+    {...props}
+  />
+))
+HeroCardSubTitle.displayName = "HeroCardSubTitle"
+
 const HeroCardDescription = React.forwardRef<
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement>
+>(({ className, ...props }, ref) => (
+  <span
+    ref={ref}
+    className={cn("max-w-[23rem] font-inter text-[0.875rem] leading-[1.25rem] text-white/75", className)}
+    {...props}
+  />
+))
+HeroCardDescription.displayName = "HeroCardDescription"
+
+
+const HeroCardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("text-[1rem] leading-[1.35rem] text-white/85", className)}
+    className={cn("w-[22rem] inline-flex items-center justify-start gap-4", className)}
     {...props}
   />
 ))
-HeroCardDescription.displayName = "HeroCardDescription"
+HeroCardFooter.displayName = "HeroCardFooter"
 
 const ProjectsCard = React.forwardRef<
   HTMLDivElement,
@@ -366,6 +366,6 @@ const ProjectsCardSkills = React.forwardRef<
 ))
 ProjectsCardSkills.displayName = "ProjectsCardSkills"
 
-export { AboutCard, AboutCardHeader, AboutCardTitle, AboutCardSubTitle, AboutCardDescription, AboutCardFooter, Card, CardContent, CardHeader,  CardFooter, CardTitle, CardDescription, ExperienceCard, 
-  ExperienceCardHeader, ExperienceCardContent, ExperienceCardImage, ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardTime, ExperienceCardDescription, HeroCard, HeroCardTitle, HeroCardDescription,
-  ProjectsCard, ProjectsCardContent, ProjectsCardHeader, ProjectsCardTitle, ProjectsCardSubTitle, ProjectsCardDescription, ProjectsCardSkills }
+export { AboutCard, AboutCardTitle, AboutCardDescription, Card, CardContent, CardHeader,  CardFooter, CardTitle, CardDescription, ExperienceCard, 
+  ExperienceCardHeader, ExperienceCardContent, ExperienceCardImage, ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardTime, ExperienceCardDescription, HeroCard, HeroCardHeader, HeroCardTitle, HeroCardSubTitle, HeroCardDescription,
+  HeroCardFooter, ProjectsCard, ProjectsCardContent, ProjectsCardHeader, ProjectsCardTitle, ProjectsCardSubTitle, ProjectsCardDescription, ProjectsCardSkills }

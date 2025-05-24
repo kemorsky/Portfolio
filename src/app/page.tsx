@@ -2,7 +2,7 @@ import ObserverProvider from "./ObserverProvider";
 
 import Navbar from "@/blocks/navbar";
 import About from "@/blocks/about";
-// import Hero from "@/blocks/hero";
+import Hero from "@/blocks/hero";
 import Skills from "@/blocks/skills";
 import Experience from "@/blocks/experience";
 import Projects from "@/blocks/my-projects";
@@ -18,8 +18,8 @@ export default function Home() {
             <div className="w-[22rem] h-[22rem] left-[-17.5rem] top-[4.438rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
             <div className="w-[22rem] h-[22rem] left-[32.375rem] top-[64.5rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
             <div className="w-[22rem] h-[22rem] left-[38.375rem] top-[159.5rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
+            <Hero/>
             <About/>
-            {/* <Hero/> */}
             <Experience/>
             <Skills/>
             <Projects/>
