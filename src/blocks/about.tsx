@@ -15,7 +15,7 @@ export default function About() {
                     I love working in a team where I can exchange ideas with other developers. My experience in construction, as well as outside of it, gave me
                     great insight into working with both my colleagues and clients alike, where many of whom may have different, or sometimes opposing ideas.<br /><br />
                     In my spare time I enjoy to spend time with my family and pets, play video games, train, and do some light game development as part of the Beyond Skyrim team where 
-                    I use software such as software such as Creation Kit, Blender, and NifSkope. Being a part of this team taught me a great deal about working as a team 
+                    I use software such as Creation Kit, Blender, and NifSkope. Being a part of this team taught me a great deal about working with others 
                     towards a common goal that is also big and complex.
                 </AboutCardDescription>
             </AboutCard>

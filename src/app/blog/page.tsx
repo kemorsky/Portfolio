@@ -8,18 +8,18 @@ export default async function Blog() {
 
     return (
         <ObserverProvider>
-            <div className="flex items-center justify-center h-full bg-Customs-Primary scroll-smooth overflow-hidden">
+            <div className="flex items-start justify-center min-h-screen h-full bg-Customs-Primary scroll-smooth overflow-hidden">
                 <main className="z-45 w-full h-full flex flex-col items-center px-4 lg:px-0 gap-8 justify-start relative mt-[7rem]">
-                    <div className="z-40 max-w-[55rem] h-full w-full flex flex-col items-start justify-center gap-8 sm:gap-12 md:gap-16 relative">
-                        <section>
-                            <h2>Test Blog</h2>
-                        </section>
-                        <ul className="space-y-4">
+                    <div className="z-40 max-w-2xl h-full w-full flex flex-col items-start justify-center gap-8 sm:gap-12 md:gap-16 relative">
+                        <div className="w-[22rem] h-[22rem] left-[-17.5rem] top-[4.438rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
+                        <div className="w-[22rem] h-[22rem] left-[32.375rem] top-[44.5rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
+                        <ul className="space-y-4 w-full">
                             {posts.map(post => (
-                            <li key={post.id}>
+                            <li key={post.id} className="hover:bg-Customs-Card border border-transparent hover:border-Customs-Card-Border transform transition-colors p-3 rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-75%]">
                                 <Link href={`/blog/${post.id}`}>
                                     <h2 className="text-xl font-semibold text-white font-dm-sans hover:underline">{post.title}</h2>
-                                    <p className="text-sm font-medium font-inter text-gray-500">{post.date}</p>
+                                    <p className="text-sm font-medium font-dm-sans text-white/75">{post.date}</p>
+                                    <p className="text-sm font-medium font-dm-sans text-white">{post.description}</p>
                                 </Link>
                             </li>
                             ))}
