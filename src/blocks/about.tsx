@@ -1,43 +1,23 @@
-'use client'
-
-import { AboutCard, AboutCardTitle, AboutCardSubTitle, AboutCardDescription, AboutCardFooter} from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Download } from 'lucide-react'
-
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-
-import Link from "next/link";
-import Image from "next/image";
+import { AboutCardDescription, AboutCard, AboutCardTitle} from "@/components/ui/card"
 
 export default function About() {
     return (
-        <div id='home' className="w-full z-50 flex items-center justify-center bg-Customs-Card rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%] shadow-[0px_10px_20px_0px_#2a4365]">
+        
+        <div id="about" className="w-full flex flex-col gap-6 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[25%]">
+            <h2 className="text-3xl font-bold font-dm-sans text-white">About Me</h2>
             <AboutCard>
-                {/* <AboutCardHeader>
-                    <Image className="object-fit w-full h-full" src="/images/about/profile-picture.jpg" alt="profile picture" width={144} height={144} />
-                </AboutCardHeader> */}
-                <section className="w-full inline-flex flex-col items-start justify-center gap-4">
-                    <section className="inline-flex flex-col items-start justify-center gap-1.5">
-                        <AboutCardTitle>Kamil Romanowicz</AboutCardTitle>
-                        <AboutCardSubTitle>Front End Developer</AboutCardSubTitle>
-                        <span className="group leading-[1.25rem]">
-                            <AboutCardSubTitle className="inline-block group-hover:hidden transition-transform">Based in Gothenburg, Sweden <Image className="inline-block group-hover:hidden transition-transform" src={'/images/about/64px-Flag_of_Sweden.svg.png'} alt="sweden flag" width={32} height={24}/></AboutCardSubTitle>
-                            <AboutCardSubTitle className="hidden group-hover:inline-block transition-transform">But originally from Poland! <Image className="hidden group-hover:inline-block transition-transform" src={'/images/about/64px-Flag_of_Poland.svg.png'} alt="poland flag" width={32} height={24}/></AboutCardSubTitle>
-                        </span>
-                        <AboutCardDescription>I&apos;m a Front End student currently seeking employment. I like to bring designs to life and learn new ways of coding websites and applications.</AboutCardDescription>
-                    </section>
-                    <AboutCardFooter>
-                        <section className="inline-flex items-center gap-1 text-2xl">
-                            <Link className='group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' aria-label="LinkedIn" href="https://www.linkedin.com/in/kamil-romanowicz-52284b2a9/"><FaLinkedinIn className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
-                            <Link className='group/follow w-10 h-10  hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
-                            <a className="group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></a>
-                        </section>
-                        <a href="/files/CV - Kamil Romanowicz.pdf" download>
-                            <Button variant="hire-me" size="default"><Download/>Download CV</Button>
-                        </a>
-                    </AboutCardFooter>
-                </section>
+                <AboutCardTitle>Hey, I&apos;m Kamil.</AboutCardTitle>
+                <AboutCardDescription>
+                    I am a 29 year old Front End student at JENSEN Yrkeshögskola in Gothenburg currently looking for work. I like to bring designs to life and
+                    figure out how certain logics of code work as well as how to implement them in my projects.<br /><br />
+                    I started my journey with development in 2023 after having decided to change careers from construction to something that lines up with my interests
+                    of computer creativity.<br /><br />
+                    I love working in a team where I can exchange ideas with other developers. My experience in construction, as well as outside of it, gave me
+                    great insight into working with both my colleagues and clients alike, where many of whom may have different, or sometimes opposing ideas.<br /><br />
+                    In my spare time I enjoy to spend time with my family and pets, play video games, train, and do some light game development as part of the Beyond Skyrim team where 
+                    I use software such as Creation Kit, Blender, and NifSkope. Being a part of this team taught me a great deal about working with others 
+                    towards a common goal that is also big and complex.
+                </AboutCardDescription>
             </AboutCard>
         </div>
     )    
