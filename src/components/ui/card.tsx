@@ -3,13 +3,13 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const AboutCard = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <section
     ref={ref}
     className={cn(
-      "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl bg-Customs-Card shadow",
+      "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-[0px_0px_20px_0px_#2a4365]",
       className
     )}
     {...props}
@@ -18,24 +18,24 @@ const AboutCard = React.forwardRef<
 AboutCard.displayName = "AboutCard"
 
 const AboutCardTitle = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLHeadingElement,
+  React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <h3
     ref={ref}
-    className={cn("text-[1.125rem] leading-[1.5rem] text-white", className)}
+    className={cn("text-[1.125rem] leading-[1.5rem] font-inter text-white", className)}
     {...props}
   />
 ))
 AboutCardTitle.displayName = "AboutCardTitle"
 
 const AboutCardDescription = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <p
     ref={ref}
-    className={cn("text-[1rem] leading-[1.35rem] text-white/85", className)}
+    className={cn("text-[1rem] leading-[1.35rem] font-inter text-white/85", className)}
     {...props}
   />
 ))
@@ -172,10 +172,10 @@ const ExperienceCardTime = React.forwardRef<
 ExperienceCardTime.displayName = "ExperienceCardTime"
 
 const ExperienceCardTitle = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLHeadingElement,
+  React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <h3
     ref={ref}
     className={cn("text-[1rem] md:text-[1.25rem] font-inter font-bold", className)}
     {...props}
@@ -184,10 +184,10 @@ const ExperienceCardTitle = React.forwardRef<
 ExperienceCardTitle.displayName = "ExperienceCardTitle"
 
 const ExperienceCardSubTitle = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <p
     ref={ref}
     className={cn("text-sm font-semibold font-inter text-white/70", className)}
     {...props}
@@ -196,10 +196,10 @@ const ExperienceCardSubTitle = React.forwardRef<
 ExperienceCardSubTitle.displayName = "ExperienceCardSubTitle"
 
 const ExperienceCardDescription = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <p
     ref={ref}
     className={cn("max-w-[35rem] text-sm font-medium font-inter text-white/90", className)}
     {...props}
@@ -235,10 +235,10 @@ const HeroCardHeader = React.forwardRef<
 HeroCardHeader.displayName = "HeroCardHeader"
 
 const HeroCardTitle = React.forwardRef<
-  HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement>
+  HTMLHeadingElement,
+  React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <span
+  <h3
     ref={ref}
     className={cn("font-dm-sans font-semibold text-[1.4rem] leading-[1.5rem] text-white", className)}
     {...props}
@@ -247,10 +247,10 @@ const HeroCardTitle = React.forwardRef<
 HeroCardTitle.displayName = "HeroCardTitle"
 
 const HeroCardSubTitle = React.forwardRef<
-  HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement>
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <span
+  <p
     ref={ref}
     className={cn("w-[16.5rem] flex items-center justify-start gap-2 font-dm-sans text-[1rem] leading-[1.25rem] text-white/90", className)}
     {...props}
@@ -259,10 +259,10 @@ const HeroCardSubTitle = React.forwardRef<
 HeroCardSubTitle.displayName = "HeroCardSubTitle"
 
 const HeroCardDescription = React.forwardRef<
-  HTMLSpanElement,
-  React.HTMLAttributes<HTMLSpanElement>
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <span
+  <p
     ref={ref}
     className={cn("max-w-[23rem] font-inter text-[0.875rem] leading-[1.25rem] text-white/75", className)}
     {...props}

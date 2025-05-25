@@ -1,7 +1,6 @@
 import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import { marked } from 'marked';
-import Navbar from "@/blocks/navbar";
 
 export function generateStaticParams(): { slug: string }[] {
     const slugs = getAllPostSlugs();
@@ -22,7 +21,6 @@ export default async function BlogPost({
 
     return (
       <main className="flex items-center justify-center h-full bg-Customs-Primary scroll-smooth overflow-hidden">
-        <Navbar />
         <div className="z-40 max-w-2xl mx-auto p-4 text-white mt-[7rem] relative">
           <div className="w-[22rem] h-[22rem] left-[-17.5rem] top-[2.438rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
           <div className="w-[22rem] h-[22rem] left-[32.375rem] top-[44.5rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
@@ -41,7 +39,7 @@ export default async function BlogPost({
             </div>
           )}
           <article
-            className="prose pb-10"
+            className="prose pb-10 z-45"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

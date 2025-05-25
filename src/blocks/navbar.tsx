@@ -31,7 +31,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="w-full max-w-[90rem] z-50 h-[6.25rem] bg-background/80 backdrop-blur-md rounded-2xl fixed top-0 self-center overflow-hidden">
+        <header className="w-full z-50 h-[6.25rem] bg-background/80 backdrop-blur-md rounded-2xl fixed top-0 self-center overflow-hidden">
             <nav className="w-full h-full inline-flex items-center justify-center text-white">
                 <div className="max-w-[50rem] inline-flex items-center justify-between gap-[3.5rem]">
                     <section className="inline-flex items-center gap-6 font-inter">
