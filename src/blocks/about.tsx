@@ -2,8 +2,7 @@ import { AboutCardDescription, AboutCard, AboutCardTitle} from "@/components/ui/
 
 export default function About() {
     return (
-        
-        <div id="about" className="w-full flex flex-col gap-6 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[25%]">
+        <div id="about" className="z-50 w-full flex flex-col gap-6 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[25%]">
             <h2 className="text-3xl font-bold font-dm-sans text-white">About Me</h2>
             <AboutCard>
                 <AboutCardTitle>Hey, I&apos;m Kamil.</AboutCardTitle>

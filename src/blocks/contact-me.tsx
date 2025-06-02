@@ -46,10 +46,10 @@ export default function Contact() {
 
   return (
     <div className="z-50 w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-4 px-4 py-3 rounded-xl border border-Customs-Card-Border mb-6 shadow-[0px_10px_20px_0px_#2a4365] relative">
-      <div className="flex flex-col items-start justify-center gap-2">
+      <article className="flex flex-col items-start justify-center gap-2">
         <h1 className="text-3xl font-bold text-white font-dm-sans">Get in touch with me</h1>
         <h2 className="text-[1rem] text-white/80 font-dm-sans">Job opportunities, design ideas, or general questions? Ask away! I&apos;ll always get back to you as soon as I can.</h2>
-      </div>
+      </article>
       <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
         <Form {...form}>
           <section className="inline-flex flex-col sm:flex-row items-center justify-center sm:gap-3">
@@ -85,7 +85,10 @@ export default function Contact() {
                   <FormItem className="h-full">
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                          <Textarea placeholder="Your message here..." aria-label="Type in Message" {...field} />
+                          <Textarea placeholder="Your message here..." 
+                                    aria-label="Type in Message" 
+                                    maxLength={2000}
+                                    {...field} />
                       </FormControl>
                       <FormMessage />
                   </FormItem>

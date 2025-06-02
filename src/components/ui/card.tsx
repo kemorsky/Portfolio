@@ -6,7 +6,7 @@ const AboutCard = React.forwardRef<
   HTMLElement,
   React.HTMLAttributes<HTMLElement>
 >(({ className, ...props }, ref) => (
-  <section
+  <article
     ref={ref}
     className={cn(
       "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-[0px_0px_20px_0px_#2a4365]",
@@ -113,10 +113,10 @@ const CardFooter = React.forwardRef<
 CardFooter.displayName = "CardFooter"
 
 const ExperienceCard = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <article
     ref={ref}
     className={cn(
       "inline-flex items-start justify-center px-4 py-3 gap-3 relative",
@@ -128,10 +128,10 @@ const ExperienceCard = React.forwardRef<
 ExperienceCard.displayName = "ExperienceCard"
 
 const ExperienceCardContent = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("pl-[1rem] inline-flex flex-col items-start gap-1 border-l-[2px] border-gray-500 ml-16", className)} {...props} />
+  <section ref={ref} className={cn("pl-[1rem] inline-flex flex-col items-start gap-1 border-l-[2px] border-gray-500 ml-16", className)} {...props} />
 ))
 ExperienceCardContent.displayName = "ExperienceCardContent"
 
@@ -208,10 +208,10 @@ const ExperienceCardDescription = React.forwardRef<
 ExperienceCardDescription.displayName = "ExperienceCardDescription"
 
 const HeroCard = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <article
     ref={ref}
     className={cn(
       "min-w-[22rem] inline-flex flex-col md:flex-row items-start justify-center gap-4 px-4 py-4 rounded-xl bg-Customs-Card text-white",
@@ -284,10 +284,10 @@ const HeroCardFooter = React.forwardRef<
 HeroCardFooter.displayName = "HeroCardFooter"
 
 const ProjectsCard = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <article
     ref={ref}
     className={cn(
       "w-full max-w-[27.125rem] h-[30rem] sm:h-[28rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-4 md:p-5 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-[0px_0px_20px_0px_#2a4365] lg:hover:translate-y-[-0.5rem] transition-all duration-200 intersect-once lg:intersect:motion-scale-in-75 lg:intersect:motion-opacity-in-0",

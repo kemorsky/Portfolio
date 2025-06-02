@@ -19,7 +19,7 @@
         },
         {
             "id": 3,
-            "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
+            "image": "/images/projects/project-3.png",
             "name": "Mormor Dagny's Bageri",
             "description": "A web application designed to digitalize data and order management for a bakery.",
             "tools": ["TypeScript", "React", "TailwindCSS", "MySQL", "Postman"],
