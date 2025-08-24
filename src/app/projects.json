@@ -2,6 +2,14 @@
     "projects": [
         {
             "id": 1,
+            "image": "/images/projects/project-4.png",
+            "name": "Delta Kanban",
+            "description": "My first fullstack project, featuring a Kanban board with draggable cards and columns. Built with React, Express.js and DnD-Kit.",
+            "tools": ["TypeScript", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js", "DnD-Kit"],
+            "link": "https://github.com/kemorsky/Delta-Kanban---Fullstack-Project"
+        },
+        {
+            "id": 2,
             "image": "/images/projects/project-1.png",
             "name": "Kollin Landing Page - Personal",
             "description": "Individual renovation of a landing page for Kollin based on a wireframe.",
@@ -9,7 +17,7 @@
             "link": "https://github.com/kemorsky/Kollin-Landing-Page"
         },
         {
-            "id": 2,
+            "id": 3,
             "image": "/images/projects/project-2.png",
             "name": "Kollin Landing Page - LiA",
             "description": "Renovated landing page of Kollin as part of my internship.",
@@ -18,19 +26,12 @@
             
         },
         {
-            "id": 3,
+            "id": 4,
             "image": "/images/projects/project-3.png",
             "name": "Mormor Dagny's Bageri",
             "description": "A web application designed to digitalize data and order management for a bakery.",
-            "tools": ["TypeScript", "React", "TailwindCSS", "MySQL", "Postman"],
+            "tools": ["TypeScript", "React", "TailwindCSS", "MySQL"],
             "link": "https://github.com/kemorsky/Mormor-Dagny-s-Bageri"
-        },
-        {
-            "id": 4,
-            "image": "/images/projects/pngfind.com-coming-soon-png-567156.png",
-            "name": "Recipe Finder",
-            "description": "A website developed to yield recipes based on advanced search querries.",
-            "tools": ["TypeScript", "React", "TailwindCSS"]
         }
     ]
 }

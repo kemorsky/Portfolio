@@ -360,7 +360,7 @@ const ProjectsCardSkills = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("inline-flex items-center justify-start flex-wrap md:flex-nowrap gap-2", className)}
+    className={cn("inline-flex items-center justify-start flex-wrap gap-2", className)}
     {...props}
   />
 ))
