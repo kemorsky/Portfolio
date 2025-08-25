@@ -5,7 +5,7 @@
             "image": "/images/projects/project-4.png",
             "name": "Delta Kanban",
             "description": "My first fullstack project, featuring a Kanban board with draggable cards and columns. Built with React, Express.js and DnD-Kit.",
-            "tools": ["TypeScript", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js", "DnD-Kit"],
+            "tools": ["TypeScript", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js", "DnD-Kit", "TanStack Query"],
             "link": "https://github.com/kemorsky/Delta-Kanban---Fullstack-Project"
         },
         {

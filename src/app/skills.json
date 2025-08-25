@@ -46,7 +46,7 @@
             },
             { 
                 "id": 5,
-                "name": "Postman" 
+                "name": "TanStack Query" 
             }
         ],
         "backends": [
@@ -57,6 +57,10 @@
             {
                 "id": 2,
                 "name": "MySQL"
+            },
+            {
+                "id": 3,
+                "name": "Node.js/Express.js"
             }
         ]
     }
