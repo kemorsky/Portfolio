@@ -21,9 +21,13 @@
         "frameworks": [
             {   
                 "id": 1,
-                "name": "React" }
-            ,
-            {   "id": 2,
+                "name": "React" 
+            },
+            {   
+                "id": 2,
+                "name": "React Native" 
+            },
+            {   "id": 3,
                 "name": "NextJS" 
             }
         ],
@@ -38,15 +42,15 @@
             },
             { 
                 "id": 3,
-                "name": "REST" 
-            },
-            { 
-                "id": 4,
                 "name": "Figma" 
             },
             { 
-                "id": 5,
+                "id": 4,
                 "name": "TanStack Query" 
+            },
+            { 
+                "id": 5,
+                "name": "Apollo" 
             }
         ],
         "backends": [
@@ -61,6 +65,14 @@
             {
                 "id": 3,
                 "name": "Node.js/Express.js"
+            },
+            {
+                "id": 4,
+                "name": "REST"
+            },
+            {
+                "id": 5,
+                "name": "Graph QL"
             }
         ]
     }

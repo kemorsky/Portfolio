@@ -7,7 +7,7 @@ export default function About() {
             <AboutCard>
                 <AboutCardTitle>Hey, I&apos;m Kamil.</AboutCardTitle>
                 <AboutCardDescription>
-                    I am a 29 year old Front End student at JENSEN Yrkeshögskola in Gothenburg currently looking for work. I like to bring designs to life and
+                    I am a 30 year old Junior Front End Developer who graduated from JENSEN Yrkeshögskola in Gothenburg in June 2025 and I am currently looking for work. I like to bring designs to life and
                     figure out how certain logics of code work as well as how to implement them in my projects.<br /><br />
                     I started my journey with development in 2023 after having decided to change careers from construction to something that lines up with my interests
                     of computer creativity.<br /><br />

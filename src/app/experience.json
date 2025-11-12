@@ -19,26 +19,33 @@
       "work": {
         "key1": {
           "image": "/images/experience/default-company-image.png",
+          "profession": "Front End Developer",
+          "name": "ProgTools, Remote",
+          "date": "1 July 2025 - 31 July 2025",
+          "description": "A short contract work. Cleaned up and fixed issues within the company website using WordPress and PHP."
+        },
+        "key2": {
+          "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer - Intern",
           "name": "SoftTech Development, Stenungsund (Remote)",
           "date": "24 February 2025 - 02 May 2025",
           "description": "Internship at a consult company operating from Stenungsund. Built a web application for owner's secondary business (bakery)."
         },
-        "key2": {
+        "key3": {
           "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer - Intern",
           "name": "K Hermodsson Development AB, Lund, Skåne (Remote)",
           "date": "23 November 2024 - 21 February 2025",
           "description": "Internship at a consult company operating from Småland."
         },
-        "key3": {
+        "key4": {
           "image": "/images/experience/krissan.jpg",
           "profession": "Tiler",
           "name": "KrissAn Plattsättning",
           "date": "2023",
           "description": "Worked as a tiler for a small company operating from Bollebygd."
         },
-        "key4": {
+        "key5": {
           "image": "/images/experience/sbor.png",
           "profession": "Tiler",
           "name": "SBOR Bygg och Renovering, Gothenburg",

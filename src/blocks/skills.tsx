@@ -12,10 +12,10 @@ type Skill = {
                 <h1 id="skills-heading" className='text-3xl font-bold font-dm-sans'>Skills</h1>
                 <span className=''>
                     <p className='max-w-[40rem] lg:w-[30rem] font-inter text-base text-white/85'>
-                        I am focused on learning how to optimize user experience by creating intuitive, seamless interfaces that are both 
-                        user-friendly and easy to maintain for developers with React.js and Next.js.<br /><br />
-                        Having picked up an interest in database development during my internship I would love to get an opportunity to explore backend technologies 
-                        in the professional field and I am already working on it in my spare time.
+                        I am focused on optimizing user experience by creating intuitive and seamless interfaces that are both 
+                        user-friendly and easy to maintain.<br /><br />
+                        Having picked up an interest in database development during my internship I am currently exploring the world of backend and I&apos;m currently working on fullstack projects, one of them being an app in React Native. 
+                        I would love to put these skills to use in the professional world of frontend and fullstack development.
                     </p>
                 </span>
             </article>
@@ -56,7 +56,7 @@ type Skill = {
                     <section aria-labelledby="backend-heading">
                         <h2 id="backend-heading" className='text-[1.125rem] font-semibold font-dm-sans'>Backend</h2>
                     </section>
-                    <div className='inline-flex items-center gap-2'>
+                    <div className='inline-flex items-center flex-wrap gap-2'>
                         {skillsData.skills.backends.map((backend: Skill) => {
                             return (
                                 <div key={backend.id}
