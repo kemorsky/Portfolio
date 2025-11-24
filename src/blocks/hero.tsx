@@ -25,7 +25,7 @@ export default function Hero() {
                             <HeroCardSubTitle className="inline-block group-hover:hidden transition-transform">Based in Gothenburg, Sweden <Image className="inline-block group-hover:hidden transition-transform" src={'/images/about/64px-Flag_of_Sweden.svg.png'} alt="sweden flag" width={32} height={24}/></HeroCardSubTitle>
                             <HeroCardSubTitle className="hidden group-hover:inline-block transition-transform">But originally from Poland! <Image className="hidden group-hover:inline-block transition-transform" src={'/images/about/64px-Flag_of_Poland.svg.png'} alt="poland flag" width={32} height={24}/></HeroCardSubTitle>
                         </span>
-                        <HeroCardDescription>I&apos;m a Front End Developer currently looking for work. I like to bring designs to life and learn new ways of coding websites and applications.</HeroCardDescription>
+                        <HeroCardDescription>I am a Front End Developer currently looking for work. <br></br> I like to bring designs to life and learn new ways of coding websites and applications.</HeroCardDescription>
                     </section>
                     <HeroCardFooter>
                         <section className="inline-flex items-center gap-1 text-2xl">
