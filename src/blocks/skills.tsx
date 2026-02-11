@@ -14,7 +14,7 @@ type Skill = {
                     <p className='max-w-[40rem] lg:w-[30rem] font-inter text-base text-white/85'>
                         I am focused on optimizing user experience by creating intuitive and seamless interfaces that are both 
                         user-friendly and easy to maintain.<br /><br />
-                        Having picked up an interest in database development during my internship I am currently exploring the world of backend and I&apos;m currently working on fullstack projects, one of them being an app in React Native. 
+                        Having picked up an interest in backend development during my internship I am currently exploring and working on fullstack projects, one of them being an app in React Native. 
                         I would love to put these skills to use in the professional world of frontend and fullstack development.
                     </p>
                 </span>
