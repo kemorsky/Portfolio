@@ -2,6 +2,14 @@
     "projects": [
         {
             "id": 1,
+            "image": "/images/projects/project-5.png",
+            "name": "Dailenge",
+            "description": "My first app built in Expo with React Native, GraphQL. Main feature is picking random challenges to complete during the day.",
+            "tools": ["TypeScript", "JavaScript", "React Native", "CSS", "Node.js", "GraphQL", "Apollo"],
+            "link": "https://github.com/kemorsky/Dailenge"
+        },
+        {
+            "id": 2,
             "image": "/images/projects/project-4.png",
             "name": "Delta Kanban",
             "description": "My first fullstack project, featuring a Kanban board with draggable cards and columns. Built with React, Express.js and DnD-Kit.",
@@ -9,7 +17,7 @@
             "link": "https://github.com/kemorsky/Delta-Kanban---Fullstack-Project"
         },
         {
-            "id": 2,
+            "id": 3,
             "image": "/images/projects/project-1.png",
             "name": "Kollin Landing Page - Personal",
             "description": "Individual renovation of a landing page for Kollin based on a wireframe.",
@@ -17,7 +25,7 @@
             "link": "https://github.com/kemorsky/Kollin-Landing-Page"
         },
         {
-            "id": 3,
+            "id": 4,
             "image": "/images/projects/project-2.png",
             "name": "Kollin Landing Page - LiA",
             "description": "Renovated landing page of Kollin as part of my internship.",
@@ -26,7 +34,7 @@
             
         },
         {
-            "id": 4,
+            "id": 5,
             "image": "/images/projects/project-3.png",
             "name": "Mormor Dagny's Bageri",
             "description": "A web application designed to digitalize data and order management for a bakery.",
