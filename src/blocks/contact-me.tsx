@@ -60,7 +60,7 @@ export default function Contact() {
                   <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                          <Input placeholder="Name" aria-label="Type in Name" {...field} />
+                          <Input placeholder="Your Name" aria-label="Type in Name" {...field} />
                       </FormControl>
                       <FormMessage />
                   </FormItem>
@@ -72,7 +72,7 @@ export default function Contact() {
                   <FormItem>
                       <FormLabel>E-mail</FormLabel>
                       <FormControl>
-                          <Input placeholder="E-mail" aria-label="Type in Email" {...field} />
+                          <Input placeholder="youremail@gmail.com" aria-label="Type in Email" {...field} />
                       </FormControl>
                       <FormMessage />
                   </FormItem>
@@ -85,7 +85,7 @@ export default function Contact() {
                   <FormItem className="h-full">
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                          <Textarea placeholder="Your message here..." 
+                          <Textarea placeholder="Hey, let's chat!" 
                                     aria-label="Type in Message" 
                                     maxLength={2000}
                                     {...field} />

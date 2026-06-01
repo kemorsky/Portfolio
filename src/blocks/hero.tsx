@@ -33,8 +33,8 @@ export default function Hero() {
                             <Link className='group/follow w-10 h-10  hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' aria-label="Navigate to GitHub" href="https://github.com/kemorsky?tab=repositories"><FaGithub className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></Link>
                             <a className="group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons" aria-label="Send E-mail" href="mailto:kamil.romanowicz95@gmail.com"><AiOutlineMail className="text-white transition-transform group-hover/follow:rotate-12 group-active/follow:hover:-rotate-0 duration-300"/></a>
                         </section>
-                        <a href="/files/CV - Kamil Romanowicz.pdf" aria-label="Download CV PDF" download>
-                            <Button variant="hire-me" size="default"><Download/>Download CV</Button>
+                        <a href="https://drive.google.com/file/d/1EiNme1FjTrRmUs3eQFrjHzG9UWHl3Xe1sNhEHKYnULQ/view" aria-label="Navigate to CV" download>
+                            <Button variant="hire-me" size="default"><Download/>Resume</Button>
                         </a>
                     </HeroCardFooter>
                 </section>
