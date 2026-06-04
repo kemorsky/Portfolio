@@ -26,7 +26,7 @@ export default function Hero() {
                 </article>
                 <h1 className="text-5xl font-dm-sans ">Kamil Romanowicz</h1>
             </section>
-            <h2 className="text-3xl font-dm-sans ">Making the web easier to navigate</h2>
+            <h2 className="text-2xl font-dm-sans ">Making the web easier to navigate</h2>
             <HeroCardDescription>I am a Front End Developer currently looking for work. <br></br> I like to bring designs to life and learn new ways of coding websites and applications.</HeroCardDescription>
 
             <HeroCardFooter>

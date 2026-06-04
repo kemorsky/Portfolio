@@ -17,28 +17,27 @@ export default function ProjectsTest() {
     };
 
     return (
-        <div id="projects" className="z-50 w-full max-h-[50rem] h-full">
+        <div id="projects" className="z-50 w-full max-w-[75rem] max-h-[50rem] h-full self-center">
             <HeadingText id="my-project-heading" text="My Projects" />
-            <h2 className="text-3xl font-bold font-dm-sans text-white mb-6">My Projects</h2>
-                <div className="w-full max-h-[50rem] h-full inline-flex flex-row snap-x snap-center lg:snap-none items-start justify-start gap-2 lg:gap-6">
-                    <section className="overflow-y-auto max-h-[46rem] h-full flex flex-col gap-4">
-                        {projectsData.projects.map((project: Project) => {
-                            return (
-                                <ProjectCard
-                                    onClick={() => {handleActiveProject(project)}}
-                                    key={project.id}
-                                    project={project}
-                                />
-                            )
-                        })}
-                    </section>
-                    {activeProject && (
-                        <ProjectDisplay 
-                            key={activeProject.id}
-                            project={activeProject}
-                        />
-                    )}
-                </div>
+            <div className="w-full max-h-[50rem] h-full inline-flex lg:flex-row flex-col snap-x snap-center lg:snap-none items-start justify-between gap-2 lg:gap-6 mt-6">
+                <section className="overflow-x-auto lg:overflow-y-auto max-w-full lg:max-w-[25rem] max-h-[46rem] h-full flex flex-row lg:flex-col gap-4">
+                    {projectsData.projects.map((project: Project) => {
+                        return (
+                            <ProjectCard
+                                onClick={() => {handleActiveProject(project)}}
+                                key={project.id}
+                                project={project}
+                            />
+                        )
+                    })}
+                </section>
+                {activeProject && (
+                    <ProjectDisplay 
+                        key={activeProject.id}
+                        project={activeProject}
+                    />
+                )}
+            </div>
         </div>
     )    
 };

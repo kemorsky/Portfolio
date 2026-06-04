@@ -6,5 +6,7 @@ export type Project = {
     synopsis?: string,
     keyTools?: string[],
     tools: string[],
-    link?: string
+    codeLink?: string,
+    demoLink?: string,
+    wip?: boolean
 }
