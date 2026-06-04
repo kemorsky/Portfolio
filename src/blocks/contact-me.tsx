@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import HeadingText from "@/components/ui/shared/heading-text"
 
 export default function Contact() {
     const form = useForm<z.infer<typeof formSchema>>({
@@ -47,6 +48,7 @@ export default function Contact() {
   return (
     <div className="z-50 w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-4 px-4 py-3 rounded-xl border border-Customs-Card-Border mb-6 shadow-[0px_10px_20px_0px_#2a4365] relative">
       <article className="flex flex-col items-start justify-center gap-2">
+        <HeadingText id="contect-me-heading" text="Contact me"/>
         <h1 className="text-3xl font-bold text-white font-dm-sans">Get in touch with me</h1>
         <h2 className="text-[1rem] text-white/80 font-dm-sans">Job opportunities, design ideas, or general questions? Ask away! I&apos;ll always get back to you as soon as I can.</h2>
       </article>

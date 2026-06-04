@@ -1,8 +1,10 @@
 import { AboutCardDescription, AboutCard, AboutCardTitle} from "@/components/ui/card"
+import HeadingText from "@/components/ui/shared/heading-text"
 
 export default function About() {
     return (
         <div id="about" className="z-50 w-full flex flex-col gap-6 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[25%]">
+            <HeadingText id="about-me-heading" text="About Me"/>
             <h2 className="text-3xl font-bold font-dm-sans text-white">About Me</h2>
             <AboutCard>
                 <AboutCardTitle>Hey, I&apos;m Kamil.</AboutCardTitle>

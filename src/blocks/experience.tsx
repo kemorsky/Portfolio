@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { ExperienceCard, ExperienceCardContent, ExperienceCardImage, ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardTime, ExperienceCardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsTrigger, TabsList } from "@/components/ui/tabs";
+import HeadingText from "@/components/ui/shared/heading-text"
 
 import Image from "next/image";
 
@@ -44,6 +45,7 @@ export default function Experience() {
 
     return (
         <div className="z-50 w-full inline-flex flex-col items-center justify-center self-center gap-4 text-white intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-x-in-[-25%]">
+            <HeadingText id="experience-heading" text="Experience" />
             <h2 className="text-3xl font-bold font-dm-sans text-white self-start">Experience</h2>
             <Tabs value={activeTab} onValueChange={setActiveTab} className="rounded-[0.5rem] inline-flex flex-col gap-4 ">
                 <TabsList role="tablist">
