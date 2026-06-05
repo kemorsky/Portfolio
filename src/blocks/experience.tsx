@@ -29,9 +29,9 @@ export default function Experience() {
     }, []);
 
     return (
-        <Wrapper className="md:intersect:motion-opacity-in-0 md:intersect:motion-translate-x-in-[-25%]">
+        <Wrapper className="bg-transparent border-none md:intersect:motion-opacity-in-0 md:intersect:motion-translate-x-in-[-25%]">
             <HeadingText id="experience-heading" text="Experience" />
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="rounded-[0.5rem] inline-flex flex-col gap-4 ">
+            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full rounded-[0.5rem] inline-flex flex-col gap-4 mt-4">
                 <TabsList role="tablist">
                     <p className="sr-only" id="experience-tab-instructions">
                         Use arrow keys to navigate tabs. Press Tab to move to content.
@@ -79,7 +79,13 @@ export default function Experience() {
                                         {data.experience.education[key].location}
                                     </ExperienceCardSubTitle>
                                 </section>
-                                <ExperienceCardDescription>{data.experience.education[key].description}</ExperienceCardDescription>
+                                <ExperienceCardDescription>
+                                    {data.experience.education[key].description.map((description, index) => (
+                                        <li className="mb-1" key={description}>
+                                            • {data.experience.education[key].description[index]}
+                                        </li>
+                                    ))}
+                                </ExperienceCardDescription>
                             </ExperienceCardContent>
                         </ExperienceCard>
                     ))}
@@ -111,10 +117,17 @@ export default function Experience() {
                                         {data.experience.work[key].location}
                                     </ExperienceCardSubTitle>
                                 </section>
-                                <ExperienceCardDescription>{data.experience.work[key].description}</ExperienceCardDescription>
-                                <section className="flex items-center gap-1 mt-2">
+                                <ExperienceCardDescription>
+                                    {data.experience.work[key].description?.map((description, index) => (
+                                        <li className="mb-1" key={description}>
+                                            • {data.experience.work[key].description[index]}
+                                        </li>
+                                    ))}
+                                    
+                                </ExperienceCardDescription>
+                                <section className="inline-flex items-center flex-wrap gap-1 mt-2">
                                     {data.experience.work[key].expertise?.map((expertise, index) => (
-                                        <span className="bg-Customs-Primary rounded-[0.5rem] px-2 py-1 border border-Customs-Card-Border" key={expertise}>
+                                        <span className="bg-Customs-Primary rounded-[0.5rem] text-sm px-2 py-1 border border-Customs-Card-Border" key={expertise}>
                                             {data.experience.work[key].expertise?.[index]}
                                         </span>
                                     ))}

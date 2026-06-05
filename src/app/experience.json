@@ -7,7 +7,7 @@
           "place": "JENSEN Yrkeshögskola",
           "location": "Gothenburg, Sweden",
           "date": "Aug 2023 - June 2025",
-          "description": "Studied Front End Development at JENSEN YrkesHögskola in Gothenburg, Sweden."
+          "description": ["Studied Front End Development at JENSEN YrkesHögskola in Gothenburg, Sweden."]
         },
         "key2": {
           "image": "/images/experience/movant.png",
@@ -15,7 +15,7 @@
           "place": "Movant",
           "location": "Borås, Sweden",
           "date": "Jan 2021 - Apr 2022",
-          "description": "Underwent studies in construction with specification in tiling. Education focused on preparing me for the job market with clients and teams alike."
+          "description": ["Underwent studies in construction with specification in tiling. Education focused on preparing me for the job market with clients and teams alike."]
         }
       },
       "work": {
@@ -25,7 +25,11 @@
           "place": "ProgTools AB Sweden",
           "location": "Remote, Sweden",
           "date": "July 2025 - Aug 2025",
-          "description": "A short contract work. Cleaned up and fixed issues within the company website using WordPress and PHP.",
+          "description": [
+            "Identified and corrected technical problems in WordPress which improved user experience and loading times.", 
+            "Improved UI components and responsibility which improved user experience on all screen sizes.", 
+            "Developed tailor-made solutions for specific client needs which improved delivery and functionality."
+          ],
           "expertise": ["Client Work", "WordPress", "PHP", "CSS"]
         },
         "key2": {
@@ -34,7 +38,11 @@
           "place": "SoftTech Development",
           "location": "Remote, Sweden",
           "date": "Feb 2025 - May 2025",
-          "description": "Internship at a consult company operating from Stenungsund. Built a web application for owner's secondary business (bakery).",
+          "description": [
+            "Developed a fullstack web application with React, TypeScript and Tailwind CSS in an Agile team.",
+            "Designed and prototyped user interface in Figma with focus on user flow and UX.",
+            "Integrated frontend with REST API for effective and scalable data communication."
+          ],
           "expertise": ["Internship", "React", "TypeScript", "Tailwind CSS"]
         },
         "key3": {
@@ -43,7 +51,11 @@
           "place": "K Hermodsson Development",
           "location": "Remote, Sweden",
           "date": "Nov 2024 - Feb 2025",
-          "description": "Internship at a consult company operating from Småland.",
+          "description": [
+            "Developed a responsive landing page in Next.js based on Figma design with focus on mobile responsiveness and presentation.",
+            "Designed components and layout in Next.js based on Figma design.",
+            "Acted as Scrum Master and improved the team's delivery capability and sprint planning."
+          ],
           "expertise": ["Internship", "React", "TypeScript", "Tailwind CSS"]
         },
         "key4": {
@@ -52,7 +64,7 @@
           "place": "KrissAn Plattsättning",
           "location": "Gothenburg, Sweden",
           "date": "2023",
-          "description": "Worked as a tiler for a small company operating from Bollebygd."
+          "description": ["Worked as a tiler for a small company operating from Bollebygd."]
         },
         "key5": {
           "image": "/images/experience/sbor.png",
@@ -60,7 +72,7 @@
           "place": "SBOR Bygg och Renovering",
           "location": "Gothenburg, Sweden",
           "date": "2022",
-          "description": "Worked as a tiler for a small company operating from Gothenburg."
+          "description": ["Worked as a tiler for a small company operating from Gothenburg."]
         }
       }
     }

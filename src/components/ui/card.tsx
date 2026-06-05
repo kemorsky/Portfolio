@@ -165,7 +165,7 @@ const ExperienceCardTime = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <time
     ref={ref}
-    className={cn("h-5 flex items-center gap-2 text-sm font-semibold font-inter text-white/70", className)}
+    className={cn("h-5 flex items-center gap-2 text-sm font-semibold font-plus-jakarta-sans text-white/70", className)}
     {...props}
   />
 ))
@@ -196,12 +196,12 @@ const ExperienceCardSubTitle = React.forwardRef<
 ExperienceCardSubTitle.displayName = "ExperienceCardSubTitle"
 
 const ExperienceCardDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
+  HTMLUListElement,
+  React.HTMLAttributes<HTMLUListElement>
 >(({ className, ...props }, ref) => (
-  <p
+  <ul
     ref={ref}
-    className={cn("max-w-[35rem] text-md font-medium font-inter text-white/90", className)}
+    className={cn("w-full mt-2 max-w-[35rem] text-sm font-medium font-inter text-white/90", className)}
     {...props}
   />
 ))

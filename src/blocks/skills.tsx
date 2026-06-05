@@ -17,7 +17,7 @@ type Skill = {
                 <article aria-labelledby="skills-heading" className='flex flex-col gap-4 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[-10rem]'>
                     
                     <span className=''>
-                        <p className='max-w-[40rem] lg:w-[30rem] font-inter text-base text-white/85'>
+                        <p className='max-w-[40rem] lg:w-[30rem] font-primary text-base text-white/85'>
                             I am focused on optimizing user experience by creating intuitive and seamless interfaces that are both 
                             user-friendly and easy to maintain.<br /><br />
                             Having picked up an interest in backend development during my internship I am currently exploring and working on fullstack projects, one of them being an app in React Native. 

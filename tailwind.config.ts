@@ -14,6 +14,7 @@ export default {
 			'card': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
 		  },
 		fontFamily: {
+			primary: ['Plus Jakarta Sans Variable', 'sans-serif'],
 			inter: ['Inter', 'sans-serif'],
 			"dm-sans": ['DM Sans', 'sans-serif'],
 			roboto: ['Roboto', 'sans-serif'],

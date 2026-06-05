@@ -25,11 +25,11 @@ export default function Hero() {
                     </span>
                 </article>
                 <article className="text-center">
-                    <h1 className="text-5xl font-dm-sans mb-4">Kamil Romanowicz</h1>
-                    <h2 className="text-2xl font-dm-sans ">Making the web easier to navigate</h2>
+                    <h1 className="text-5xl font-primary mb-4">Kamil Romanowicz</h1>
+                    <h2 className="text-2xl font-primary ">Making the web easier to navigate</h2>
                 </article>
                 <span className="max-w-[30rem]">
-                    I am a Front End Developer currently looking for work. I like to bring designs to life and learn new ways of coding websites and applications.
+                    Frontend Developer by profession, Fullstack Developer by passion. currently looking for work. I like to bring designs to life and learn new ways of coding websites and applications.
                 </span>
             </section>
             

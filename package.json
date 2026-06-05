@@ -10,6 +10,7 @@
     "type-check": "tsc -b"
   },
   "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
     "@fontsource/dm-sans": "^5.2.5",
     "@fontsource/inter": "^5.2.5",
     "@fontsource/lato": "^5.2.5",

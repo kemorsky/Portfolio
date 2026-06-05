@@ -17,7 +17,7 @@ export type Experience = {
     location: string;
     profession: string;
     date: string;
-    description: string;
+    description: string[];
     expertise?: string[];
   };
   

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from "@vercel/analytics/next"
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/blocks/navbar";
 
