@@ -4,15 +4,17 @@
         "key1": {
           "image": "/images/experience/jensen.png",
           "profession": "Front End Developer",
-          "name": "JENSEN Yrkeshögskola, Gothenburg",
-          "date": "August 2023 - June 2025",
+          "place": "JENSEN Yrkeshögskola",
+          "location": "Gothenburg, Sweden",
+          "date": "Aug 2023 - June 2025",
           "description": "Studied Front End Development at JENSEN YrkesHögskola in Gothenburg, Sweden."
         },
         "key2": {
           "image": "/images/experience/movant.png",
           "profession": "Tiler",
-          "name": "Movant, Borås",
-          "date": "January 2021-  April 2022",
+          "place": "Movant",
+          "location": "Borås, Sweden",
+          "date": "Jan 2021 - Apr 2022",
           "description": "Underwent studies in construction with specification in tiling. Education focused on preparing me for the job market with clients and teams alike."
         }
       },
@@ -20,35 +22,43 @@
         "key1": {
           "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer",
-          "name": "ProgTools, Remote",
-          "date": "July 2025 - August 2025",
-          "description": "A short contract work. Cleaned up and fixed issues within the company website using WordPress and PHP."
+          "place": "ProgTools AB Sweden",
+          "location": "Remote, Sweden",
+          "date": "July 2025 - Aug 2025",
+          "description": "A short contract work. Cleaned up and fixed issues within the company website using WordPress and PHP.",
+          "expertise": ["Client Work", "WordPress", "PHP", "CSS"]
         },
         "key2": {
           "image": "/images/experience/default-company-image.png",
-          "profession": "Front End Developer - Intern",
-          "name": "SoftTech Development, Stenungsund (Remote)",
-          "date": "February 2025 - May 2025",
-          "description": "Internship at a consult company operating from Stenungsund. Built a web application for owner's secondary business (bakery)."
+          "profession": "Front End Developer Intern",
+          "place": "SoftTech Development",
+          "location": "Remote, Sweden",
+          "date": "Feb 2025 - May 2025",
+          "description": "Internship at a consult company operating from Stenungsund. Built a web application for owner's secondary business (bakery).",
+          "expertise": ["Internship", "React", "TypeScript", "Tailwind CSS"]
         },
         "key3": {
           "image": "/images/experience/default-company-image.png",
-          "profession": "Front End Developer - Intern",
-          "name": "K Hermodsson Development AB, Lund, Skåne (Remote)",
-          "date": "November 2024 - February 2025",
-          "description": "Internship at a consult company operating from Småland."
+          "profession": "Front End Developer Intern",
+          "place": "K Hermodsson Development",
+          "location": "Remote, Sweden",
+          "date": "Nov 2024 - Feb 2025",
+          "description": "Internship at a consult company operating from Småland.",
+          "expertise": ["Internship", "React", "TypeScript", "Tailwind CSS"]
         },
         "key4": {
           "image": "/images/experience/krissan.jpg",
           "profession": "Tiler",
-          "name": "KrissAn Plattsättning",
+          "place": "KrissAn Plattsättning",
+          "location": "Gothenburg, Sweden",
           "date": "2023",
           "description": "Worked as a tiler for a small company operating from Bollebygd."
         },
         "key5": {
           "image": "/images/experience/sbor.png",
           "profession": "Tiler",
-          "name": "SBOR Bygg och Renovering, Gothenburg",
+          "place": "SBOR Bygg och Renovering",
+          "location": "Gothenburg, Sweden",
           "date": "2022",
           "description": "Worked as a tiler for a small company operating from Gothenburg."
         }

@@ -5,37 +5,21 @@ import { ExperienceCard, ExperienceCardContent, ExperienceCardImage, ExperienceC
 import { Tabs, TabsContent, TabsTrigger, TabsList } from "@/components/ui/tabs";
 import HeadingText from "@/components/ui/shared/heading-text"
 
+import { FaCalendarAlt } from "react-icons/fa";
+import { AiOutlineCalendar } from "react-icons/ai";
+import { BsCalendar2, BsBriefcase } from "react-icons/bs";
+import { IoLocationOutline } from "react-icons/io5";
+
 import Image from "next/image";
 
 import experienceData from '@/app/experience.json'
 import Wrapper from "@/components/ui/shared/wrapper";
+import { ExperienceData } from "@/lib/types";
 
-type Experience = {
-    image: string;
-    name: string;
-    profession: string;
-    date: string;
-    description: string;
-  };
-  
-  type Education = {
-    [key: string]: Experience;
-  };
-  
-  type Work = {
-    [key: string]: Experience;
-  };
-  
-  type ExperienceData = {
-    experience: {
-        education: Education;
-        work: Work;
-    };
-  };
 
 export default function Experience() {
     const data: ExperienceData = experienceData;
-    const [activeTab, setActiveTab] = useState("education");
+    const [ activeTab, setActiveTab ] = useState("education");
 
     useEffect(() => {
         const storedActiveTab = localStorage.getItem("activeTab");
@@ -80,9 +64,21 @@ export default function Experience() {
                                 className='w-full h-full object-cover rounded-full' />
                             </ExperienceCardImage>
                             <ExperienceCardContent>
-                                <ExperienceCardTime>{data.experience.education[key].date}</ExperienceCardTime>
                                 <ExperienceCardTitle>{data.experience.education[key].profession}</ExperienceCardTitle>
-                                <ExperienceCardSubTitle>{data.experience.education[key].name}</ExperienceCardSubTitle>
+                                <ExperienceCardTime>
+                                    <BsCalendar2 className="w-4 h-4 text-white/70" />
+                                    {data.experience.education[key].date}
+                                </ExperienceCardTime>
+                                <section className="flex md:flex-row flex-col items-start md:gap-3">
+                                    <ExperienceCardSubTitle>
+                                        <BsBriefcase className="w-4 h-4 text-white/70"/>
+                                        {data.experience.education[key].place}
+                                    </ExperienceCardSubTitle>
+                                    <ExperienceCardSubTitle className="md:gap-1">
+                                        <IoLocationOutline className="w-4 h-4 text-white/70"/>
+                                        {data.experience.education[key].location}
+                                    </ExperienceCardSubTitle>
+                                </section>
                                 <ExperienceCardDescription>{data.experience.education[key].description}</ExperienceCardDescription>
                             </ExperienceCardContent>
                         </ExperienceCard>
@@ -100,10 +96,29 @@ export default function Experience() {
                                 className='w-full h-full object-cover rounded-full' />
                             </ExperienceCardImage>
                             <ExperienceCardContent>
-                                <ExperienceCardTime>{data.experience.work[key].date}</ExperienceCardTime>
                                 <ExperienceCardTitle>{data.experience.work[key].profession}</ExperienceCardTitle>
-                                <ExperienceCardSubTitle>{data.experience.work[key].name}</ExperienceCardSubTitle>
+                                <ExperienceCardTime>
+                                    <BsCalendar2 className="w-4 h-4 text-white/70" />
+                                    {data.experience.work[key].date}
+                                </ExperienceCardTime>
+                                <section className="flex md:flex-row flex-col items-start md:gap-3">
+                                    <ExperienceCardSubTitle>
+                                        <BsBriefcase className="w-4 h-4 text-white/70"/>
+                                        {data.experience.work[key].place}
+                                    </ExperienceCardSubTitle>
+                                    <ExperienceCardSubTitle className="md:gap-1">
+                                        <IoLocationOutline className="w-4 h-4 text-white/70"/>
+                                        {data.experience.work[key].location}
+                                    </ExperienceCardSubTitle>
+                                </section>
                                 <ExperienceCardDescription>{data.experience.work[key].description}</ExperienceCardDescription>
+                                <section className="flex items-center gap-1 mt-2">
+                                    {data.experience.work[key].expertise?.map((expertise, index) => (
+                                        <span className="bg-Customs-Primary rounded-[0.5rem] px-2 py-1 border border-Customs-Card-Border" key={expertise}>
+                                            {data.experience.work[key].expertise?.[index]}
+                                        </span>
+                                    ))}
+                                </section>
                             </ExperienceCardContent>
                         </ExperienceCard>
                     ))}

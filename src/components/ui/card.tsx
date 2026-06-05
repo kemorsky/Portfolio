@@ -165,7 +165,7 @@ const ExperienceCardTime = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <time
     ref={ref}
-    className={cn("text-sm font-semibold font-inter text-white/70", className)}
+    className={cn("h-5 flex items-center gap-2 text-sm font-semibold font-inter text-white/70", className)}
     {...props}
   />
 ))
@@ -189,7 +189,7 @@ const ExperienceCardSubTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("text-sm font-semibold font-inter text-white/70", className)}
+    className={cn("h-5 flex items-center justify-center gap-2 text-sm font-semibold font-inter text-white/70", className)}
     {...props}
   />
 ))
@@ -201,7 +201,7 @@ const ExperienceCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("max-w-[35rem] text-sm font-medium font-inter text-white/90", className)}
+    className={cn("max-w-[35rem] text-md font-medium font-inter text-white/90", className)}
     {...props}
   />
 ))
