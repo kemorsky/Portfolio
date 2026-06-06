@@ -5,8 +5,6 @@ import { ExperienceCard, ExperienceCardContent, ExperienceCardImage, ExperienceC
 import { Tabs, TabsContent, TabsTrigger, TabsList } from "@/components/ui/tabs";
 import HeadingText from "@/components/ui/shared/heading-text"
 
-import { FaCalendarAlt } from "react-icons/fa";
-import { AiOutlineCalendar } from "react-icons/ai";
 import { BsCalendar2, BsBriefcase } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -37,6 +35,7 @@ export default function Experience() {
                         Use arrow keys to navigate tabs. Press Tab to move to content.
                     </p>
                     <TabsTrigger id="tab-education"
+                                className="rounded-r-none"
                                  role="tab" 
                                  value="education" 
                                  aria-label="Education Tab" 
@@ -45,6 +44,7 @@ export default function Experience() {
                                  tabIndex={activeTab === "education" ? 0 : -1}>
                                     Education</TabsTrigger>
                     <TabsTrigger id="tab-work"
+                                className="rounded-l-none"
                                  role="tab" 
                                  value="work" 
                                  aria-label="Work Tab" 
@@ -66,16 +66,16 @@ export default function Experience() {
                             <ExperienceCardContent>
                                 <ExperienceCardTitle>{data.experience.education[key].profession}</ExperienceCardTitle>
                                 <ExperienceCardTime>
-                                    <BsCalendar2 className="w-4 h-4 text-white/70" />
+                                    <BsCalendar2 className="w-[1.0625rem] h-[1.0625rem] text-white/70" />
                                     {data.experience.education[key].date}
                                 </ExperienceCardTime>
                                 <section className="flex md:flex-row flex-col items-start md:gap-3">
                                     <ExperienceCardSubTitle>
-                                        <BsBriefcase className="w-4 h-4 text-white/70"/>
+                                        <BsBriefcase className="w-[1.0625rem] h-[1.0625rem] text-white/70"/>
                                         {data.experience.education[key].place}
                                     </ExperienceCardSubTitle>
                                     <ExperienceCardSubTitle className="md:gap-1">
-                                        <IoLocationOutline className="w-4 h-4 text-white/70"/>
+                                        <IoLocationOutline className="w-[1.0625rem] h-[1.0625rem] text-white/70"/>
                                         {data.experience.education[key].location}
                                     </ExperienceCardSubTitle>
                                 </section>
@@ -104,16 +104,16 @@ export default function Experience() {
                             <ExperienceCardContent>
                                 <ExperienceCardTitle>{data.experience.work[key].profession}</ExperienceCardTitle>
                                 <ExperienceCardTime>
-                                    <BsCalendar2 className="w-4 h-4 text-white/70" />
+                                    <BsCalendar2 className="w-[1.0625rem] h-[1.0625rem] text-white/70" />
                                     {data.experience.work[key].date}
                                 </ExperienceCardTime>
                                 <section className="flex md:flex-row flex-col items-start md:gap-3">
                                     <ExperienceCardSubTitle>
-                                        <BsBriefcase className="w-4 h-4 text-white/70"/>
+                                        <BsBriefcase className="w-[1.0625rem] h-[1.0625rem] text-white/70"/>
                                         {data.experience.work[key].place}
                                     </ExperienceCardSubTitle>
                                     <ExperienceCardSubTitle className="md:gap-1">
-                                        <IoLocationOutline className="w-4 h-4 text-white/70"/>
+                                        <IoLocationOutline className="w-[1.0625rem] h-[1.0625rem] text-white/70"/>
                                         {data.experience.work[key].location}
                                     </ExperienceCardSubTitle>
                                 </section>
