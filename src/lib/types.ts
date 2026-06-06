@@ -35,3 +35,9 @@ export type ExperienceData = {
         work: Work;
     };
 };
+
+export type Skill = {
+    id: number;
+    name: string;
+    icon?: string;
+}

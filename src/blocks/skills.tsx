@@ -2,18 +2,14 @@ import skillsData from '../app/skills.json'
 import Wrapper from "@/components/ui/shared/wrapper"
 import HeadingText from "@/components/ui/shared/heading-text"
 
-type Skill = {
-    id: number;
-    name: string;    
-}
+import { type Skill } from '../../src/lib/types'
+import SkillCard from "@/components/ui/skills/skill-card"
 
   export default function Skills() {
     return (
         <div className="z-50 w-full max-w-[50rem] flex-col inline-flex items-start self-center gap-6 text-white">
             <HeadingText id="skills-heading" text="Skills" />
             <section className="flex justify-between w-full">
-
-           
                 <article aria-labelledby="skills-heading" className='flex flex-col gap-4 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[-10rem]'>
                     
                     <span className=''>
@@ -91,6 +87,38 @@ type Skill = {
                         </div>
                     </div>
                 </div>
+             </section>
+
+             <section className="flex justify-between w-full">
+                
+                <article aria-labelledby="skills-heading" className='flex flex-col gap-8 intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-duration-1000 md:intersect:motion-translate-x-in-[-10rem]'>
+                    
+                    <div className="w-full flex flex-col items-center justify-center gap-2">
+                        <h2 id="core-skills-heading" className='text-[1.125rem] font-semibold font-dm-sans'>Core Skills</h2>
+                        <section className="w-full flex flex-wrap justify-center gap-2">
+                            {skillsData.skills.coreSkills.map((skill: Skill) => (
+                                <SkillCard key={skill.id} skill={skill} />
+                            ))}
+                        </section>
+                    </div>
+                    <div className="w-full flex flex-col items-center justify-center gap-2">
+                        <h2 id="core-skills-heading" className='text-[1.125rem] font-semibold font-dm-sans'>Currently Exploring</h2>
+                        <section className="w-full flex flex-wrap justify-center gap-2">
+                            {skillsData.skills.currentlyExploring.map((skill: Skill) => (
+                                <SkillCard key={skill.id} skill={skill} />
+                            ))}
+                        </section>
+                    </div>
+                    <div className="w-full flex flex-col items-center justify-center gap-2">
+                        <h2 id="core-skills-heading" className='text-[1.125rem] font-semibold font-dm-sans'>Previously Worked With</h2>
+                        <section className="w-full flex flex-wrap justify-center gap-2">
+                            {skillsData.skills.previouslyWorkedWith.map((skill: Skill) => (
+                                <SkillCard key={skill.id} skill={skill} />
+                            ))}
+                        </section>
+                    </div>
+                </article>
+                
              </section>
         </div>
     )    
