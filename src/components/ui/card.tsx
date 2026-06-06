@@ -277,7 +277,7 @@ const HeroCardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("w-[22rem] inline-flex items-center justify-start gap-4", className)}
+    className={cn(" inline-flex items-center justify-start gap-4", className)}
     {...props}
   />
 ))

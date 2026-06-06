@@ -31,7 +31,8 @@ export default {
 		},
   		colors: {
 			Customs: {
-				Primary: "hsl(240, 100%, 7.8%)",
+				Primary: "hsl(240, 21.05%, 14.9%)",
+				// Primary: "hsl(240, 100%, 7.8%)",
 				backgroundEclipse: "hsl(210, 75%, 35%)",
 				// Card: "hsl(0, 0%, 10%)",
 				Card: "hsl(224, 35%, 20%)",
