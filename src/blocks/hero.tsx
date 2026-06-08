@@ -1,6 +1,6 @@
 'use client'
 
-import { HeroCard, HeroCardTitle, HeroCardSubTitle, HeroCardDescription, HeroCardFooter} from "@/components/ui/card"
+import { HeroCardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Download } from 'lucide-react'
 
