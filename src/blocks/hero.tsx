@@ -16,15 +16,6 @@ export default function Hero() {
     return (
         <Wrapper id="home" className="bg-transparent border-none mt-10 max-w-[50rem] md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]">
             <section className="w-full flex flex-col items-start gap-4 self-start">
-                {/* <article className="max-w-[15rem] group leading-[1.25rem] p-4 rounded-2xl border border-Customs-Card-Border self-start">
-                    <span className="inline-block group-hover:hidden transition-transform">
-                        Frontend Developer 
-                    </span>
-                    <span className="hidden group-hover:inline-block transition-transform"> 
-                        Aspiring Fullstack Developer 
-                    </span>
-                </article> */}
-                
                 <section className="w-full flex md:flex-row flex-col-reverse gap-4 md:gap-0 items-start justify-between text-left">
                     <article className="">
                         <h1 className="text-3xl md:text-4xl font-primary font-semibold mb-2">Hi, I&apos;m <p className="inline text-white/80">Kamil Romanowicz</p></h1>
