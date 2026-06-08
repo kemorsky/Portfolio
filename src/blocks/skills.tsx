@@ -1,5 +1,4 @@
 import skillsData from '../app/skills.json'
-import Wrapper from "@/components/ui/shared/wrapper"
 import HeadingText from "@/components/ui/shared/heading-text"
 
 import { type Skill } from '../../src/lib/types'
