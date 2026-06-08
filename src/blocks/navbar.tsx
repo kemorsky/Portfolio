@@ -44,8 +44,7 @@ export default function Navbar() {
                             <NavBarEffect />
                         </Link>
                         <Link
-                            href="/#about"
-                            onClick={(e) => handleNavClick(e, "about")}
+                            href="/about"
                             className="hover:text-gray-500 hover:transition-colors group relative"
                             aria-label="Navigate to About Section"
                         >
