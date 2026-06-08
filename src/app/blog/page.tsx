@@ -17,9 +17,9 @@ export default async function Blog() {
                             {posts.map(post => (
                             <li key={post.id} className="hover:bg-Customs-Card border border-transparent hover:border-Customs-Card-Border transform transition-colors p-3 rounded-xl intersect-once md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-75%]">
                                 <Link href={`/blog/${post.id}`}>
-                                    <h2 className="text-xl font-semibold text-white font-dm-sans hover:underline">{post.title}</h2>
-                                    <p className="text-sm font-medium font-dm-sans text-white/75">{post.date}</p>
-                                    <p className="text-sm font-medium font-dm-sans text-white">{post.description}</p>
+                                    <h2 className="text-xl font-semibold text-white font-primary hover:underline">{post.title}</h2>
+                                    <p className="text-sm font-medium font-primary text-white/75">{post.date}</p>
+                                    <p className="text-sm font-medium font-primary text-white">{post.description}</p>
                                 </Link>
                             </li>
                             ))}

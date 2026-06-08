@@ -80,28 +80,26 @@ const FormItem = React.forwardRef<
 
   return (
     <FormItemContext.Provider value={{ id }}>
-      <div ref={ref} className={cn("w-full h-[6rem] font-inter space-y-1", className)} {...props} />
+      <div ref={ref} className={cn("w-full h-[6rem] font-primary space-y-1", className)} {...props} />
     </FormItemContext.Provider>
   )
 })
 FormItem.displayName = "FormItem"
 
-const FormLabel = React.forwardRef<
-  React.ElementRef<typeof LabelPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
->(({ className, ...props }, ref) => {
+function FormLabel({ 
+  className, 
+  ...props 
+}: React.ComponentProps<typeof LabelPrimitive.Root>) {
   const { error, formItemId } = useFormField()
 
   return (
     <Label
-      ref={ref}
       className={cn("text-white", error && "text-white", className)}
       htmlFor={formItemId}
       {...props}
     />
   )
-})
-FormLabel.displayName = "FormLabel"
+}
 
 const FormControl = React.forwardRef<
   React.ElementRef<typeof Slot>,
@@ -135,7 +133,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={cn("text-[0.8rem] font-inter text-muted-foreground", className)}
+      className={cn("text-[0.8rem] font-primary text-muted-foreground", className)}
       {...props}
     />
   )
@@ -157,7 +155,7 @@ const FormMessage = React.forwardRef<
     <p
       ref={ref}
       id={formMessageId}
-      className={cn("text-[0.8rem] font-medium font-inter text-red-400", className)}
+      className={cn("text-[0.8rem] font-medium font-primary text-red-400", className)}
       {...props}
     >
       {body}

@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import HeadingText from "@/components/ui/shared/heading-text"
+import Wrapper from "@/components/ui/shared/wrapper"
 
 export default function Contact() {
     const form = useForm<z.infer<typeof formSchema>>({
@@ -46,58 +47,66 @@ export default function Contact() {
       };
 
   return (
-    <div className="z-50 w-full bg-Customs-Card inline-flex flex-col items-start justify-center gap-4 px-4 py-3 rounded-xl border border-Customs-Card-Border mb-6 shadow-[0px_10px_20px_0px_#2a4365] relative">
-      <article className="flex flex-col items-start justify-center gap-2">
+    <div className="z-50 w-full max-w-[50rem] inline-flex flex-col items-start justify-center self-center gap-4 rounded-xl mb-12 relative">
         <HeadingText id="contect-me-heading" text="Contact me"/>
-        <h1 className="text-3xl font-bold text-white font-dm-sans">Get in touch with me</h1>
-        <h2 className="text-[1rem] text-white/80 font-dm-sans">Job opportunities, design ideas, or general questions? Ask away! I&apos;ll always get back to you as soon as I can.</h2>
-      </article>
-      <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
-        <Form {...form}>
-          <section className="inline-flex flex-col sm:flex-row items-center justify-center sm:gap-3">
-            <FormField
-              control={form.control}
-              name="firstName"
-              render={({ field }) => (
-                  <FormItem>
-                      <FormLabel>Name</FormLabel>
-                      <FormControl>
-                          <Input placeholder="Your Name" aria-label="Type in Name" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                  </FormItem>
-              )}/>
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                  <FormItem>
-                      <FormLabel>E-mail</FormLabel>
-                      <FormControl>
-                          <Input placeholder="youremail@gmail.com" aria-label="Type in Email" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                  </FormItem>
-              )}/>
-          </section>
-          <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                  <FormItem className="h-full">
-                      <FormLabel>Message</FormLabel>
-                      <FormControl>
-                          <Textarea placeholder="Hey, let's chat!" 
-                                    aria-label="Type in Message" 
-                                    maxLength={2000}
-                                    {...field} />
-                      </FormControl>
-                      <FormMessage />
-                  </FormItem>
-              )}/>
-        </Form>
-        <Button type="submit" variant="submit" size="submit" aria-label="Submit Message" className="self-end mt-[1.5rem]">Submit</Button>
-      </form>
+        <Wrapper className="p-4 shadow-[0px_10px_20px_0px_#2a4365] ">
+          <article className="w-full lex flex-col items-start justify-center gap-2">
+            <section className="w-full inline-flex items-center justify-between">
+              <h1 className="text-3xl font-semibold text-white font-primary">Get in touch with me</h1>
+              <p className="inline-flex items-center gap-1 px-2 rounded-xl bg-emerald-400/10 text-emerald-400 font-secondary font-semibold">
+                <span className="text-xl">•</span>
+                <span className="text-sm">OPEN TO WORK</span>
+              </p>
+            </section>
+            <h2 className="text-[1rem] text-white/80 font-primary">Job opportunities, design ideas, or general questions? Ask away! <br></br> I&apos;ll always get back to you as soon as I can.</h2>
+          </article>
+          <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
+            <Form {...form}>
+              <section className="inline-flex flex-col sm:flex-row items-center justify-center sm:gap-3">
+                <FormField
+                  control={form.control}
+                  name="firstName"
+                  render={({ field }) => (
+                      <FormItem>
+                          <FormLabel>Name</FormLabel>
+                          <FormControl>
+                              <Input placeholder="Your Name" aria-label="Type in Name" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                      </FormItem>
+                  )}/>
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                      <FormItem>
+                          <FormLabel>E-mail</FormLabel>
+                          <FormControl>
+                              <Input placeholder="youremail@gmail.com" aria-label="Type in Email" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                      </FormItem>
+                  )}/>
+              </section>
+              <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                      <FormItem className="h-full">
+                          <FormLabel>Message</FormLabel>
+                          <FormControl>
+                              <Textarea placeholder="Hey, let's chat!" 
+                                        aria-label="Type in Message" 
+                                        maxLength={2000}
+                                        {...field} />
+                          </FormControl>
+                          <FormMessage />
+                      </FormItem>
+                  )}/>
+            </Form>
+            <Button type="submit" variant="submit" size="submit" aria-label="Submit Message" className="self-end mt-[1.5rem]">Submit</Button>
+          </form>
+      </Wrapper>
     </div>
     
   )

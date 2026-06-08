@@ -5,15 +5,15 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-sm font-medium font-secondary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default:"bg-sky-500 hover:bg-sky-600 text-white shadow-sm transition-colors ",
-        "hire-me":"bg-Customs-CVButton hover:bg-Customs-CVButton/80 text-black shadow-sm border border-black",
+        default: "bg-sky-500 hover:bg-sky-600 text-white shadow-sm transition-colors ",
+        "hire-me": "bg-Customs-CVButton hover:bg-Customs-CVButton/80 text-black shadow-sm border border-black",
         discover: "rounded-2xl bg-white text-black border border-black hover:bg-white/80",
-        submit:"border border-input bg-neutral-200 hover:bg-gray-400 transition-colors shadow-sm hover:text-accent-foreground",
-        secondary:"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+        submit: "border border-input bg-neutral-200 hover:bg-gray-400 transition-colors shadow-sm text-black hover:text-black/80",
+        secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         gitHub: "bg-transparent hover:bg-[#24292F]/80 text-white border border-[#24292F] hover:border-[#24292F]/80",

@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/blocks/navbar";
+import Footer from "@/blocks/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +30,11 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId="GT-NMLLKZGL" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-Customs-Primary`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
+        <Footer />
         <Analytics />
       </body>
       <GoogleAnalytics gaId="G-K70V2PZ4E8" />

@@ -16,7 +16,7 @@ export default {
 		fontFamily: {
 			primary: ['Plus Jakarta Sans Variable', 'sans-serif'],
 			inter: ['Inter', 'sans-serif'],
-			"dm-sans": ['DM Sans', 'sans-serif'],
+			secondary: ['DM Sans', 'sans-serif'],
 			roboto: ['Roboto', 'sans-serif'],
 		},
 		keyframes: {

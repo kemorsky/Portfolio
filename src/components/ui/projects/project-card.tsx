@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                 <Image src={props.project.image} alt="project image" width={350} height={224} className='h-full object-cover rounded-xl'/>
             </section>
             <section className="h-[10rem]  mb-2 inline-flex flex-col justify-between gap-4">
-                <article className="text-white font-dm-sans">
+                <article className="text-white font-primary">
                     <h2 className="font-semibold mb-2 text-[1.25rem]">
                         {props.project.name}
                     </h2>
@@ -35,7 +35,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                 <section className="">
                     {props.project.keyTools?.map((tool: string) => {
                         return (
-                            <div key={tool} className='inline-flex items-center justify-center rounded text-xs tracking-wide font-medium font-inter text-white/90 bg-Customs-Primary/80 min-w-[3.75rem] h-8 px-2 py-1 mr-2'>
+                            <div key={tool} className='inline-flex items-center justify-center rounded text-xs tracking-wide font-medium font-primary text-white/90 bg-Customs-Primary/80 min-w-[3.75rem] h-8 px-2 py-1 mr-2'>
                                 {tool}</div>
                             )
                     })}
