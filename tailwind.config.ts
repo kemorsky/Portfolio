@@ -12,6 +12,8 @@ export default {
   	extend: {
 		boxShadow: {
 			'card': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+			main: "0px 0px 20px 0px #0f1824",
+			'main-hover': "0px 0px 20px 0px #263c5a"
 		  },
 		fontFamily: {
 			primary: ['Plus Jakarta Sans Variable', 'sans-serif'],

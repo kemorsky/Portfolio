@@ -6,8 +6,8 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="w-full max-w-[75rem] mx-auto mb-8">
-            <section className="w-full flex flex-col items-center gap-4 justify-center p-4 rounded-xl bg-Customs-Card">
+        <footer className="bg-Customs-Primary w-full max-w-[75rem] mx-auto mb-8 px-4 xl:px-0">
+            <section className="bg-Customs-Card w-full flex flex-col items-center gap-4 justify-center p-4 rounded-xl shadow-main ">
                 <section className="inline-flex items-center gap-1 text-2xl justify-self-end">
                     <Link className='group/follow w-10 h-10 hover:scale-110 transition-all duration-200 flex items-center justify-center rounded-[0.5rem] hover:bg-Customs-socialsButtons' 
                         aria-label="Navigate to LinkedIn" 

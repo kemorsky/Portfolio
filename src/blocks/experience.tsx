@@ -127,7 +127,7 @@ export default function Experience() {
                                 </ExperienceCardDescription>
                                 <section className="inline-flex items-center flex-wrap gap-1 mt-2">
                                     {data.experience.work[key].expertise?.map((expertise, index) => (
-                                        <span className="bg-Customs-Primary rounded-[0.5rem] text-sm px-2 py-1 border border-Customs-Card-Border" key={expertise}>
+                                        <span className="bg-Customs-Primary font-secondary rounded-[0.5rem] text-sm px-2 py-1 border border-Customs-Card-Border" key={expertise}>
                                             {data.experience.work[key].expertise?.[index]}
                                         </span>
                                     ))}

@@ -47,11 +47,11 @@ export default function Contact() {
       };
 
   return (
-    <div className="z-50 w-full max-w-[50rem] inline-flex flex-col items-start justify-center self-center gap-4 rounded-xl mb-12 relative">
+    <div className="z-50 w-full max-w-[50rem] inline-flex flex-col items-start justify-center self-center gap-4 rounded-xl md:mb-[8rem] mb-[3rem] relative">
         <HeadingText id="contect-me-heading" text="Contact me"/>
-        <Wrapper className="p-4 shadow-[0px_10px_20px_0px_#2a4365] ">
-          <article className="w-full lex flex-col items-start justify-center gap-2">
-            <section className="w-full inline-flex items-center justify-between">
+        <Wrapper className="p-4 shadow-main ">
+          <article className="w-full flex flex-col items-start justify-center gap-2">
+            <section className="w-full inline-flex flex-col-reverse sm:flex-row items-start sm:items-center justify-start sm:justify-between gap-2">
               <h1 className="text-3xl font-semibold text-white font-primary">Get in touch with me</h1>
               <p className="inline-flex items-center gap-1 px-2 rounded-xl bg-emerald-400/10 text-emerald-400 font-secondary font-semibold">
                 <span className="text-xl">•</span>
