@@ -48,37 +48,12 @@ export default function ProjectCard(props: ProjectCardProps) {
                         View Code
                     </Button>
                 </Link>
-                <Link href={props.project.demoLink ?? ""}>
-                    <Button variant="liveDemo">Live Demo</Button>
-                </Link>
+                {props.project.demoLink && (
+                    <Link href={props.project.demoLink ?? ""}>
+                        <Button variant="liveDemo">Live Demo</Button>
+                    </Link>
+                )}
             </section>
         </section>
-        // <section 
-        //     key={props.project.id} 
-        //     aria-label={`Project: ${props.project.name}`} 
-        //     onClick={props.onClick}
-        //     tabIndex={0}
-        //     className={
-        //         cn("w-full max-w-[25rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-[0px_0px_20px_0px_#2a4365] lg:hover:translate-y-[-0.5rem] transition-all duration-200 intersect-once lg:intersect:motion-scale-in-75 lg:intersect:motion-opacity-in-0",
-        //         props.className
-        //     )}>
-        //     <Image src={props.project.image} alt="project image" width={400} height={120} className='h-full object-cover rounded-xl'/>
-        //     <section className="px-4 mb-4 flex flex-col gap-4">
-        //         <article>
-        //             <h2 className="text-white font-dm-sans font-semibold">
-        //                 {props.project.name}
-        //             </h2>
-        //             <span>{props.project.description}</span>
-        //         </article>
-        //         <section className="">
-        //             {props.project.keyTools?.map((tool: string) => {
-        //                 return (
-        //                     <div key={tool} className='inline-flex items-center justify-center rounded text-xs tracking-wide font-medium font-inter text-white/90 bg-Customs-Primary/80 min-w-[3.75rem] h-8 px-2 py-1 mr-2'>
-        //                         {tool}</div>
-        //                     )
-        //             })}
-        //         </section>
-        //     </section>
-        // </section>
     )
 };

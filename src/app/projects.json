@@ -45,7 +45,7 @@
             "keyTools": ["React", "TypeScript", "Node.js", "DnD-Kit"],
             "tools": [ "React", "TypeScript", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "DnD-Kit", "TanStack Query"],
             "codeLink": "https://github.com/kemorsky/Delta-Kanban---Fullstack-Project",
-            "demoLink": "",
+            "demoLink": "https://fullstack-kanban-delta.vercel.app/",
             "wip": false
         },
         {
