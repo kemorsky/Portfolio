@@ -47,18 +47,18 @@ export default function Contact() {
       };
 
   return (
-    <div className="z-50 w-full max-w-[50rem] inline-flex flex-col items-start justify-center self-center gap-4 rounded-xl mb-12 relative">
-        <HeadingText id="contect-me-heading" text="Contact me"/>
-        <Wrapper className="p-4 shadow-[0px_10px_20px_0px_#2a4365] ">
-          <article className="w-full lex flex-col items-start justify-center gap-2">
-            <section className="w-full inline-flex items-center justify-between">
-              <h1 className="text-3xl font-semibold text-white font-primary">Get in touch with me</h1>
+    <div className="z-50 w-full max-w-[50rem] inline-flex flex-col items-start justify-center self-center gap-4 rounded-xl md:mb-[8rem] mb-[3rem] relative">
+        <HeadingText id="contect-me-heading" text="Get in touch with me"/>
+        <Wrapper className="p-4 shadow-main ">
+          <article className="w-full flex flex-col items-start justify-center gap-2">
+            <section className="w-full inline-flex flex-col-reverse sm:flex-row items-start sm:items-center justify-start sm:justify-between gap-2">
+              <h1 className="max-w-[30rem] text-3xl font-semibold text-white font-primary">Job opportunities, design ideas, or general questions?</h1>
               <p className="inline-flex items-center gap-1 px-2 rounded-xl bg-emerald-400/10 text-emerald-400 font-secondary font-semibold">
                 <span className="text-xl">•</span>
                 <span className="text-sm">OPEN TO WORK</span>
               </p>
             </section>
-            <h2 className="text-[1rem] text-white/80 font-primary">Job opportunities, design ideas, or general questions? Ask away! <br></br> I&apos;ll always get back to you as soon as I can.</h2>
+            <h2 className="text-[1rem] text-white/80 font-primary">Ask away! I&apos;ll always get back to you as soon as I can.</h2>
           </article>
           <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
             <Form {...form}>

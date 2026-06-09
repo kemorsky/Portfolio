@@ -44,7 +44,7 @@ const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
-      "overflow-hidden border border-Customs-Card-Border rounded-xl",
+      "overflow-hidden bg-Customs-Card  border border-Customs-Card-Border rounded-xl shadow-main",
       className
     )}
     {...props}
