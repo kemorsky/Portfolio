@@ -25,8 +25,8 @@ export default async function BlogPost({
           <div className="w-[22rem] h-[22rem] left-[-12.5rem] top-[0.438rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
           <div className="w-[22rem] h-[22rem] left-[32.375rem] top-[44.5rem] absolute bg-Customs-backgroundEclipse/80 rounded-full blur-[25rem]" />
           <section className="z-50 relative" aria-label='Blog Post'>
-            <h1 className="text-3xl font-bold font-dm-sans mb-2">{post.title}</h1>
-            <p className="text-sm font-dm-sans text-white/75 mb-4">{post.date}</p>
+            <h1 className="text-3xl font-bold font-primary mb-2">{post.title}</h1>
+            <p className="text-sm font-primary text-white/75 mb-4">{post.date}</p>
             {post.tags && (
               <div className="flex flex-wrap gap-2 mb-4" aria-label='Tags'>
                 {post.tags.map((tag) => (
@@ -41,7 +41,7 @@ export default async function BlogPost({
             )}
             <article
               aria-label='Post Content'
-              className="prose pb-10 font-inter text-white/90"
+              className="prose pb-10 font-primary text-white/90"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </section>
