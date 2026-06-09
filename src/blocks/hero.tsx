@@ -1,8 +1,6 @@
 'use client'
 
-import { HeroCardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Download } from 'lucide-react'
 
 import { FaLinkedinIn, FaGithub, FaArrowRight } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";

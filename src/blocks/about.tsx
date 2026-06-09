@@ -1,4 +1,4 @@
-import { AboutCardDescription, AboutCard, AboutCardTitle} from "@/components/ui/card"
+import { AboutCardDescription } from "@/components/ui/card"
 import HeadingText from "@/components/ui/shared/heading-text"
 
 export default function About() {
