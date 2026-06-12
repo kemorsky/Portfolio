@@ -53,12 +53,14 @@ export default function Contact() {
           <article className="w-full flex flex-col items-start justify-center gap-2">
             <section className="w-full inline-flex flex-col-reverse sm:flex-row items-start sm:items-center justify-start sm:justify-between gap-2">
               <h1 className="max-w-[30rem] text-3xl font-semibold text-white font-primary">Job opportunities, design ideas, or general questions?</h1>
-              <p className="inline-flex items-center gap-1 px-2 rounded-xl bg-emerald-400/10 text-emerald-400 font-secondary font-semibold">
+              <p className="inline-flex items-center gap-1 px-2 rounded-xl bg-emerald-400/10 text-emerald-400 shadow-main font-secondary font-semibold">
                 <span className="text-xl">•</span>
                 <span className="text-sm">OPEN TO WORK</span>
               </p>
             </section>
-            <h2 className="text-[1rem] text-white/80 font-primary">Ask away! I&apos;ll always get back to you as soon as I can.</h2>
+            <h2 className="text-[1rem] text-white/80 font-primary">
+              Ask away! I&apos;ll always get back to you as soon as I can.
+            </h2>
           </article>
           <form onSubmit={form.handleSubmit(onSubmit)} id="contact-me" className="w-full inline-flex flex-col">
             <Form {...form}>
@@ -104,7 +106,9 @@ export default function Contact() {
                       </FormItem>
                   )}/>
             </Form>
-            <Button type="submit" variant="submit" size="submit" aria-label="Submit Message" className="self-end mt-[1.5rem]">Submit</Button>
+            <Button type="submit" variant="submit" size="submit" aria-label="Submit Message" className="self-end mt-[1.5rem]">
+              Submit
+            </Button>
           </form>
       </Wrapper>
     </div>

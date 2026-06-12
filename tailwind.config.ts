@@ -39,7 +39,7 @@ export default {
 				// Card: "hsl(0, 0%, 10%)",
 				Card: "hsl(224, 35%, 20%)",
 				"Card-Border": "hsl(224, 35%, 30%)",
-				CVButton: "hsl(51, 100%, 50%)",
+				CVButton: "hsl(226, 64%, 88%)",
 				socialsButtons: "hsl(224, 35%, 30%)",
 				projectTools: "hsl(37, 72%, 54%)",
 			},

@@ -19,7 +19,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             onClick={props.onClick}
             tabIndex={0}
             className={
-                cn("w-full max-w-[27.125rem] h-full max-h-[35rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-3 md:p-4 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-main lg:hover:shadow-main-hover lg:hover:translate-y-[-0.5rem] transition-all duration-200 intersect-once lg:intersect:motion-scale-in-75 lg:intersect:motion-opacity-in-0",
+                cn("w-full max-w-[23.5rem] h-full max-h-[35rem] aspect-[auto] flex-shrink-0 inline-flex flex-col items-start justify-start gap-4 p-3 md:p-4 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-main lg:hover:shadow-main-hover lg:hover:translate-y-[-0.5rem] transition-all duration-200 intersect-once lg:intersect:motion-scale-in-75 lg:intersect:motion-opacity-in-0",
                 props.className
             )}>
             <section className="h-[14rem] rounded-xl shadow-md overflow-hidden">

@@ -16,15 +16,21 @@ export default function Hero() {
         <Wrapper id="home" className="bg-transparent border-none pt-10 max-w-[50rem] md:intersect:motion-opacity-in-0 md:intersect:motion-translate-y-in-[-25%]">
             <section className="w-full flex flex-col items-start gap-4 self-start">
                 <section className="w-full flex md:flex-row flex-col-reverse gap-4 md:gap-0 items-start justify-between text-left">
-                    <article className="">
-                        <h1 className="text-3xl md:text-4xl font-primary font-semibold mb-2">Hi, I&apos;m <p className="inline text-white/80">Kamil Romanowicz</p></h1>
-                        <h2 className="text-[1.125rem] md:text-xl font-primary font-medium">Frontend Developer by profession, Fullstack Developer by passion.</h2>
+                    <article>
+                        <h1 className="text-3xl md:text-4xl font-primary font-semibold mb-2">
+                            Hi, I&apos;m <p className="inline text-white/80">Kamil Romanowicz</p>
+                        </h1>
+                        <h2 className="text-[1.125rem] md:text-xl font-primary font-medium">
+                            Frontend Developer by profession,<br></br> Fullstack Developer by passion.
+                        </h2>
                     </article>
                     <article className="group bg-Customs-Card self-end md:self-start w-full max-w-[19rem] py-2 px-3 rounded-xl border border-Customs-Card-Border shadow-main">
-                        <p className="h-[1.6875rem] inline-block group-hover:hidden transition-all font-primary">Based in Gothenburg, Sweden 
+                        <p className="h-[1.6875rem] inline-block group-hover:hidden transition-all font-primary">
+                            Based in Gothenburg, Sweden 
                             <Image className="inline-block group-hover:hidden transition-all ml-2" src={'/images/about/64px-Flag_of_Sweden.svg.png'} alt="sweden flag" width={36} height={24}/>
                         </p>
-                        <p className="h-[1.6875rem] hidden group-hover:inline-block transition-all font-primary">But I&apos;m originally from Poland! 
+                        <p className="h-[1.6875rem] hidden group-hover:inline-block transition-all font-primary">
+                            But I&apos;m originally from Poland! 
                             <Image className="hidden group-hover:inline-block transition-all ml-2" src={'/images/about/64px-Flag_of_Poland.svg.png'} alt="poland flag" width={36} height={24}/>
                         </p>
                     </article>
@@ -62,12 +68,12 @@ export default function Hero() {
                             Resume <TbFileCv />
                         </Button>
                     </a>
-                    <Link className="max-w-[14rem] h-11 group/follow w-full py-2 px-3 hover:scale-110 transition-all duration-200 inline-flex items-center gap-1 rounded-[0.5rem] hover:bg-Customs-socialsButtons" 
+                    <Link className="max-w-[14rem] h-11 group/follow w-full py-2 px-3 hover:scale-105 transition-all duration-200 inline-flex items-center gap-1 rounded-[0.5rem] hover:bg-Customs-socialsButtons" 
                         aria-label="Navigate to About me page" 
                         href="/about"
                     >
-                        <p className="w-full leading-[1.25rem]">Read more about me</p>
-                        <FaArrowRight className="w-4 h-4 mt-1 text-white transition-transform group-hover/follow:-rotate-12 group-active/follow:hover:-rotate-0 duration-300"/>
+                        <p className="w-full leading-[1.25rem] font-semibold font-secondary">Read more about me</p>
+                        <FaArrowRight className="w-4 h-4 text-white transition-transform group-hover/follow:-rotate-12 group-active/follow:hover:-rotate-0 duration-300"/>
                     </Link>
                 </section>
             </section>
