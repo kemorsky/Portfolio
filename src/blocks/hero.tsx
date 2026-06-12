@@ -63,7 +63,9 @@ export default function Hero() {
                     
                 </section>
                 <section className="flex gap-4">
-                    <a href="https://drive.google.com/file/d/1EiNme1FjTrRmUs3eQFrjHzG9UWHl3Xe1sNhEHKYnULQ/view" aria-label="Navigate to CV" download>
+                    <a href="https://drive.google.com/file/d/1EiNme1FjTrRmUs3eQFrjHzG9UWHl3Xe1sNhEHKYnULQ/view" 
+                        aria-label="Navigate to CV"
+                    >
                         <Button variant="hire-me" size="default">
                             Resume <TbFileCv />
                         </Button>
@@ -72,7 +74,9 @@ export default function Hero() {
                         aria-label="Navigate to About me page" 
                         href="/about"
                     >
-                        <p className="w-full leading-[1.25rem] font-semibold font-secondary">Read more about me</p>
+                        <p className="w-full leading-[1.25rem] font-semibold font-secondary">
+                            Read more about me
+                        </p>
                         <FaArrowRight className="w-4 h-4 text-white transition-transform group-hover/follow:-rotate-12 group-active/follow:hover:-rotate-0 duration-300"/>
                     </Link>
                 </section>

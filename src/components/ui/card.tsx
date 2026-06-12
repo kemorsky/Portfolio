@@ -2,45 +2,6 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
-const AboutCard = React.forwardRef<
-  HTMLElement,
-  React.HTMLAttributes<HTMLElement>
->(({ className, ...props }, ref) => (
-  <article
-    ref={ref}
-    className={cn(
-      "w-full md:h-full inline-flex flex-col text-left gap-4 p-6 rounded-xl border border-Customs-Card-Border bg-Customs-Card lg:shadow-[0px_0px_20px_0px_#2a4365]",
-      className
-    )}
-    {...props}
-  />
-))
-AboutCard.displayName = "AboutCard"
-
-const AboutCardTitle = React.forwardRef<
-  HTMLHeadingElement,
-  React.HTMLAttributes<HTMLHeadingElement>
->(({ className, ...props }, ref) => (
-  <h3
-    ref={ref}
-    className={cn("text-[1.125rem] leading-[1.5rem] font-inter text-white", className)}
-    {...props}
-  />
-))
-AboutCardTitle.displayName = "AboutCardTitle"
-
-const AboutCardDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
->(({ className, ...props }, ref) => (
-  <p
-    ref={ref}
-    className={cn("text-[1rem] leading-[1.35rem] font-inter text-white/85", className)}
-    {...props}
-  />
-))
-AboutCardDescription.displayName = "AboutCardDescription"
-
 const ExperienceCard = React.forwardRef<
   HTMLElement,
   React.HTMLAttributes<HTMLElement>
@@ -137,7 +98,5 @@ const ExperienceCardDescription = React.forwardRef<
 ExperienceCardDescription.displayName = "ExperienceCardDescription"
 
 
-
-
-export { AboutCard, AboutCardTitle, AboutCardDescription, ExperienceCard, 
-  ExperienceCardHeader, ExperienceCardContent, ExperienceCardImage, ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardTime, ExperienceCardDescription }
+export { ExperienceCard, ExperienceCardHeader, ExperienceCardContent, ExperienceCardImage, 
+  ExperienceCardTitle, ExperienceCardSubTitle, ExperienceCardTime, ExperienceCardDescription }
