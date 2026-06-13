@@ -8,21 +8,26 @@
             },
             {   
                 "id": 2,
+                "name": "JavaScript",
+                "icon": "/icons/skills/JavaScript.svg"
+            },
+            {   
+                "id": 3,
                 "name": "TypeScript",
                 "icon": "/icons/skills/TypeScript.svg"
             },
             {   
-                "id": 3,
+                "id": 4,
                 "name": "TailwindCSS",
                 "icon": "/icons/skills/Tailwind CSS.svg"
             },
             {   
-                "id": 4,
+                "id": 5,
                 "name": "CSS",
                 "icon": "/icons/skills/CSS3.svg"
             },
             {   
-                "id": 5,
+                "id": 6,
                 "name": "TanStack Query",
                 "icon": "/icons/skills/TanStackQuery.svg"
             }
