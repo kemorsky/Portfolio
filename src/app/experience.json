@@ -22,6 +22,19 @@
         "key1": {
           "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer",
+          "place": "ProgTools AB Sweden (Again!)",
+          "location": "Remote, Sweden",
+          "date": "Mar - May 2026",
+          "description": [
+            "Identified and corrected technical problems which improved user experience and loading times.", 
+            "Improved UI components and responsibility which improved user experience on all screen sizes.", 
+            "Developed tailor-made solutions for specific client needs which improved delivery and functionality."
+          ],
+          "expertise": ["Client Work", "WordPress", "PHP", "CSS"]
+        },
+        "key2": {
+          "image": "/images/experience/default-company-image.png",
+          "profession": "Front End Developer",
           "place": "ProgTools AB Sweden",
           "location": "Remote, Sweden",
           "date": "July 2025 - Aug 2025",
@@ -32,7 +45,7 @@
           ],
           "expertise": ["Client Work", "WordPress", "PHP", "CSS"]
         },
-        "key2": {
+        "key3": {
           "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer Intern",
           "place": "SoftTech Development",
@@ -45,7 +58,7 @@
           ],
           "expertise": ["Internship", "React", "TypeScript", "Tailwind CSS"]
         },
-        "key3": {
+        "key4": {
           "image": "/images/experience/default-company-image.png",
           "profession": "Front End Developer Intern",
           "place": "K Hermodsson Development",
@@ -58,7 +71,7 @@
           ],
           "expertise": ["Internship", "React", "TypeScript", "Tailwind CSS"]
         },
-        "key4": {
+        "key5": {
           "image": "/images/experience/krissan.jpg",
           "profession": "Tiler",
           "place": "KrissAn Plattsättning",
@@ -66,7 +79,7 @@
           "date": "2023",
           "description": ["Worked as a tiler for a small company operating from Bollebygd."]
         },
-        "key5": {
+        "key6": {
           "image": "/images/experience/sbor.png",
           "profession": "Tiler",
           "place": "SBOR Bygg och Renovering",
