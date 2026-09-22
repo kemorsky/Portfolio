@@ -37,7 +37,7 @@ export default function Navbar() {
                         <Link
                             href="/#home"
                             onClick={(e) => handleNavClick(e, "home")}
-                            className="hover:text-gray-500 hover:transition-colors group relative"
+                            className="hover:text-gray-400 hover:transition-colors group relative"
                             aria-label="Navigate to Home"
                         >
                             Home
@@ -45,7 +45,7 @@ export default function Navbar() {
                         </Link>
                         <Link
                             href="/about"
-                            className="hover:text-gray-500 hover:transition-colors group relative"
+                            className="hover:text-gray-400 hover:transition-colors group relative"
                             aria-label="Navigate to About Section"
                         >
                             About
@@ -54,7 +54,7 @@ export default function Navbar() {
                         <Link
                             href="/#projects"
                             onClick={(e) => handleNavClick(e, "projects")}
-                            className="hover:text-gray-500 hover:transition-colors group relative"
+                            className="hover:text-gray-400 hover:transition-colors group relative"
                             aria-label="Navigate to Projects Section"
                         >
                             Projects
@@ -62,7 +62,7 @@ export default function Navbar() {
                         </Link>
                         <Link
                             href="/blog"
-                            className="hover:text-gray-500 hover:transition-colors group relative"
+                            className="hover:text-gray-400 hover:transition-colors group relative"
                             aria-label="Navigate to Blog Page Section"
                         >
                             Blog
@@ -71,7 +71,7 @@ export default function Navbar() {
                         <Link
                             href="/#contact-me"
                             onClick={(e) => handleNavClick(e, "contact-me")}
-                            className="hover:text-gray-500 hover:transition-colors group relative"
+                            className="hover:text-gray-400 hover:transition-colors group relative"
                             aria-label="Navigate to Contact Form"
                         >
                             Contact

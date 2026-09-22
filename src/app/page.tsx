@@ -4,7 +4,7 @@ import Hero from "@/blocks/hero";
 import Skills from "@/blocks/skills";
 import Experience from "@/blocks/experience";
 import Projects from "@/blocks/my-projects";
-import Contact from "@/blocks/contact-me";
+// import Contact from "@/blocks/contact-me";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
             <Experience/>
             <Skills/>
             <Projects/>
-            <Contact/>
+            {/* <Contact/> */}
           </div>
         </main> 
       </div>

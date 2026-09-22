@@ -37,7 +37,7 @@ export default {
 				backgroundEclipse: "hsl(210, 75%, 35%)",
 				Card: "hsl(224, 35%, 20%)",
 				"Card-Border": "hsl(224, 35%, 30%)",
-				CVButton: "hsl(226, 64%, 88%)",
+				Button: "hsl(22, 84%, 71%)",
 				socialsButtons: "hsl(224, 35%, 30%)",
 				projectTools: "hsl(37, 72%, 54%)",
 			},
