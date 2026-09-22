@@ -20,6 +20,7 @@
 
 body {
   background-color: "Customs-Primary";
+  z-index: 90;
 }
 
 .header {

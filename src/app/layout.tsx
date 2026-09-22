@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId="GT-NMLLKZGL" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-Customs-Primary`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-Customs-Primary border`}
       >
         <Navbar />
         {children}

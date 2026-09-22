@@ -68,7 +68,7 @@ export default function Navbar() {
                             Blog
                             <NavBarEffect />
                         </Link>
-                        <Link
+                        {/* <Link
                             href="/#contact-me"
                             onClick={(e) => handleNavClick(e, "contact-me")}
                             className="hover:text-gray-400 hover:transition-colors group relative"
@@ -76,7 +76,7 @@ export default function Navbar() {
                         >
                             Contact
                             <NavBarEffect />
-                        </Link>
+                        </Link> */}
                     </section>
                 
             </nav>
